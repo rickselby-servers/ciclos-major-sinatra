@@ -1,0 +1,29 @@
+body {
+    background-color: #d1f1fd;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(53,31,76,1) 40%, rgba(237,18,123,1) 100%);
+}
+
+.navbar {
+    padding: 0;
+    font-size: 95%;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active
+{
+    color: white;
+}
+
+.header .chain {
+    background-image: url(/img/chain.png);
+    background-position: center;
+    background-size: contain;
+    height: 10px;
+    overflow-x: hidden;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
