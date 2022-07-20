@@ -1,5 +1,5 @@
 ###############################################################################
-FROM ruby:2.7.6-alpine AS ruby-base
+FROM ruby:3.1.2-alpine AS ruby-base
 
 RUN apk --no-cache add imagemagick
 RUN gem update bundler
