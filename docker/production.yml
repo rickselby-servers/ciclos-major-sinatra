@@ -1,0 +1,17 @@
+version: '2.4'
+
+services:
+  app:
+    image: $CONTAINER_RUBY
+    restart: always
+    container_name: ciclos-major-sinatra-app
+    environment:
+      CONTAINER_ROLE: app
+      RACK_ENV: production
+      VIRTUAL_HOST: ciclos.selby-family.co.uk
+      LETSENCRYPT_HOST: ciclos.selby-family.co.uk
+      LETSENCRYPT_EMAIL:
+
+networks:
+  default:
+    name: ciclos-major-sinatra
