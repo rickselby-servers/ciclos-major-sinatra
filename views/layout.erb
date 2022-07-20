@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
   <script type=text/javascript src="/js/holder.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 
 <div class="w-100 header mb-3">
   <div class="container text-center">
@@ -64,10 +64,33 @@
   <div class="chain"></div>
 </div>
 
-<main class="container" role="main">
+<main class="container flex-shrink-0 mb-3" role="main">
   <%== yield %>
 </main>
 
+<div class="footer text-white mt-auto py-3">
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+      <div class="col">
+        Partner Logos
+      </div>
+      <div class="col">
+        Link to bookings
+      </div>
+      <div class="col">
+        Social links
+      </div>
+      <div class="col">
+        Phone numbers
+      </div>
+      <div class="col">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</div>
 </body>
 
 </html>
