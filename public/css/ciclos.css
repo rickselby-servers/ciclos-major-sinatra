@@ -27,3 +27,10 @@ body {
     width: 100%;
     position: relative;
 }
+
+.front-page-buttons .col {
+    margin: 5px;
+    padding-top: 12px;
+    background-color: rgba(237,18,123,1);
+    padding-bottom: 12px;
+}
