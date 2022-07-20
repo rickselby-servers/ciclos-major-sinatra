@@ -19,3 +19,9 @@ desc 'Bring up app'
 task :up do
   system 'rerun --background --no-notify -- ruby app.rb -p 8080'
 end
+
+desc 'Build and run production image'
+task :prod do
+  sh 'docker build -f docker/Dockerfile -t ciclos-major-prod .'
+  sh 'docker run -p 80:80 ciclos-major-prod'
+end
