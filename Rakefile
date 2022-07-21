@@ -22,6 +22,8 @@ end
 
 desc 'Build and run production image'
 task :prod do
+  Rake::Task['npm:install'].invoke
+  Rake::Task['webpack:prod'].invoke
   sh 'docker build -f docker/Dockerfile -t ciclos-major-prod .'
   sh 'docker run -p 80:80 ciclos-major-prod'
 end
