@@ -1,0 +1,2 @@
+
+window.bootstrap = require('holderjs');
