@@ -1,4 +1,5 @@
 --ignore 'docker/*'
 --ignore 'js/*'
 --ignore 'public/*'
+--ignore 'sass/*'
 --ignore 'views/*'
