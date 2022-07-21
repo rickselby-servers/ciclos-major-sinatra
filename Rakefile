@@ -25,3 +25,46 @@ task :prod do
   sh 'docker build -f docker/Dockerfile -t ciclos-major-prod .'
   sh 'docker run -p 80:80 ciclos-major-prod'
 end
+
+def node_command(command, name: nil)
+  flags = [
+    '--rm',
+    '-i',
+    "-v #{Dir.pwd}:/app",
+    '-w /app',
+    '--env HOME=./.node',
+    "--user #{Process.uid}:#{Process.gid}"
+  ]
+  flags.push "--name #{name}" unless name.nil?
+
+  "docker run #{flags.join ' '} node:16-alpine #{command}"
+end
+
+namespace :npm do
+  desc 'Run npm install'
+  task :install do
+    sh node_command 'npm install'
+  end
+
+  desc 'Run npm update'
+  task :update do
+    sh node_command 'npm update'
+  end
+end
+
+desc 'Run webpack for dev'
+task :webpack do
+  sh node_command 'npx webpack --config webpack.dev.js'
+end
+
+namespace :webpack do
+  desc 'Run webpack watch'
+  task :watch do
+    sh node_command 'npx webpack watch --config webpack.dev.js'
+  end
+
+  desc 'Run webpack production'
+  task :prod do
+    sh node_command 'npx webpack --config webpack.prod.js'
+  end
+end
