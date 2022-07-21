@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   app:
-    image: $CONTAINER_RUBY
+    image: $CONTAINER
     restart: always
     container_name: ciclos-major-sinatra-app
     environment:
