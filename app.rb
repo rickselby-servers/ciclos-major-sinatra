@@ -42,7 +42,7 @@ get('/routes') { erb :routes }
 get('/safety') { erb :safety }
 get('/support-crew') { erb :todo }
 get('/terms-and-conditions') { erb :todo }
-get('/testimonials') { erb :todo }
+get('/testimonials') { erb :testimonials }
 
 # Camps
 get('/camps') { erb :todo }
