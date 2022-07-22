@@ -34,11 +34,11 @@ get('/contact-us') { erb :todo }
 get('/faqs') { erb :todo }
 get('/gallery') { erb :todo }
 get('/guides') { erb :todo }
-get('/lunch-stops') { erb :todo }
+get('/lunch-stops') { erb :lunch_stops }
 get('/other-information') { erb :todo }
 get('/privacy-policy') { erb :todo }
-get('/ride-groups') { erb :todo }
-get('/routes') { erb :todo }
+get('/ride-groups') { erb :ride_groups }
+get('/routes') { erb :routes }
 get('/safety') { erb :safety }
 get('/support-crew') { erb :todo }
 get('/terms-and-conditions') { erb :todo }
