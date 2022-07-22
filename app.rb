@@ -28,7 +28,7 @@ end
 
 get('/') { erb :index }
 get('/about-us') { erb :todo }
-get('/arrivals-and-transfers') { erb :todo }
+get('/arrivals-and-transfers') { erb :arrivals_and_transfers }
 get('/bike-rental') { erb :todo }
 get('/contact-us') { erb :todo }
 get('/faqs') { erb :todo }
@@ -55,11 +55,11 @@ get('/camps/2023-spring') { erb :todo }
 get('/camps/2023-autumn') { erb :todo }
 get('/camps/2023-312') { erb :todo }
 # Hotels
-get('/hotels/can-ribera') { erb :todo }
-get('/hotels/zafiro-palace') { erb :todo }
-get('/hotels/zafiro-tropic') { erb :'hotels/zafiro-tropic' }
+get('/hotels/can-ribera') { erb :'hotels/can_ribera' }
+get('/hotels/zafiro-palace') { erb :'hotels/zafiro_palace' }
+get('/hotels/zafiro-tropic') { erb :'hotels/zafiro_tropic' }
 # Locations
-get('/locations/alcudia') { erb :todo }
-get('/locations/climate') { erb :todo }
-get('/locations/mallorca') { erb :todo }
-get('/locations/muro') { erb :todo }
+get('/locations/alcudia') { erb :'locations/alcudia' }
+get('/locations/climate') { erb :'locations/climate' }
+get('/locations/mallorca') { erb :'locations/mallorca' }
+get('/locations/muro') { erb :'locations/muro' }
