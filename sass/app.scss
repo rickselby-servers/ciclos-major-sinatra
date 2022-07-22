@@ -4,8 +4,9 @@
 // 2. Include any default variable overrides here
 $min-contrast-ratio:   3 !default;
 $body-bg: #d1f1fd !default;
-$primary: rgba(237, 18, 123, 1);
-$secondary: rgba(53, 31, 76, 1);
+$gradient-bottom: hsl(331, 86%, 50%); // #ab0d59
+$primary: hsl(331, 86%, 36%); // #ed127b
+$secondary: rgb(53, 31, 76); // # #351f4c
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -70,7 +71,7 @@ $secondary-link-hover-color: shift-color($secondary, $link-shade-percentage) !de
 }
 
 .header {
-  background: linear-gradient(180deg, $secondary 40%, $primary 100%);
+  background: linear-gradient(180deg, $secondary 40%, $gradient-bottom 100%);
 
   .chain {
     background-image: url(/img/chain.png);
