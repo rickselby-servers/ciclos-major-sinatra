@@ -47,8 +47,8 @@ get('/testimonials') { erb :todo }
 # Camps
 get('/camps') { erb :todo }
 get('/camps/312') { erb :todo }
-get('/camps/bespoke') { erb :todo }
-get('/camps/cycling-and-triathlon') { erb :todo }
+get('/camps/bespoke') { erb :'camps/bespoke' }
+get('/camps/cycling-and-triathlon') { erb :'camps/cycling_and_triathlon' }
 # Camps booking pages
 get('/camps/2022-autumn') { erb :todo }
 get('/camps/2023-spring') { erb :todo }
@@ -57,7 +57,7 @@ get('/camps/2023-312') { erb :todo }
 # Hotels
 get('/hotels/can-ribera') { erb :todo }
 get('/hotels/zafiro-palace') { erb :todo }
-get('/hotels/zafiro-tropic') { erb :todo }
+get('/hotels/zafiro-tropic') { erb :'hotels/zafiro-tropic' }
 # Locations
 get('/locations/alcudia') { erb :todo }
 get('/locations/climate') { erb :todo }
