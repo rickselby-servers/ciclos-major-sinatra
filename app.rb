@@ -39,7 +39,7 @@ get('/other-information') { erb :todo }
 get('/privacy-policy') { erb :todo }
 get('/ride-groups') { erb :todo }
 get('/routes') { erb :todo }
-get('/safety') { erb :todo }
+get('/safety') { erb :safety }
 get('/support-crew') { erb :todo }
 get('/terms-and-conditions') { erb :todo }
 get('/testimonials') { erb :todo }
