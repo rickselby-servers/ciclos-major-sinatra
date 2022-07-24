@@ -2,11 +2,11 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$min-contrast-ratio:   3 !default;
 $body-bg: #d1f1fd !default;
 $gradient-bottom: hsl(331, 86%, 50%); // #ab0d59
 $primary: hsl(331, 86%, 36%); // #ed127b
 $secondary: rgb(53, 31, 76); // # #351f4c
+$info: #087a91;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
