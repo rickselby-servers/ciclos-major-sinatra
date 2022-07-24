@@ -50,7 +50,7 @@ get('/testimonials') { erb :testimonials }
 
 # Camps
 get('/camps') { erb :todo }
-get('/camps/312') { erb :todo }
+get('/camps/312') { erb :'camps/312' }
 get('/camps/bespoke') { erb :'camps/bespoke' }
 get('/camps/cycling-and-triathlon') { erb :'camps/cycling_and_triathlon' }
 # Camps booking pages
