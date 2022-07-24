@@ -113,3 +113,17 @@ $secondary-link-hover-color: shift-color($secondary, $link-shade-percentage) !de
 .footer {
   background-color: $secondary;
 }
+
+.carousel-chevron-left {
+  @extend .text-white;
+  @extend .bg-black;
+  padding-left: 0.1em;
+  padding-right: 0.05em
+}
+
+.carousel-chevron-right {
+  @extend .text-white;
+  @extend .bg-black;
+  padding-left: 0.05em;
+  padding-right: 0.1em
+}
