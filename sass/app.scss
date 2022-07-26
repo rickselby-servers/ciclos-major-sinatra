@@ -8,6 +8,9 @@ $primary: hsl(331, 86%, 36%); // #ed127b
 $secondary: rgb(53, 31, 76); // # #351f4c
 $info: #087a91;
 
+$accordion-button-active-bg: tint-color($info, 90%);
+$accordion-button-active-color: shade-color($info, 10%);
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 
