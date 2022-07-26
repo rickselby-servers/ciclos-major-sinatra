@@ -35,17 +35,16 @@ get('/about-us') { erb :about_us }
 get('/arrivals-and-transfers') { erb :arrivals_and_transfers }
 get('/bike-rental') { erb :bike_rental }
 get('/contact-us') { erb :todo }
-get('/faqs') { erb :todo }
+get('/faqs') { erb :faqs }
 get('/gallery') { erb :todo }
 get('/guides') { erb :guides }
 get('/lunch-stops') { erb :lunch_stops }
-get('/other-information') { erb :todo }
-get('/privacy-policy') { erb :todo }
+get('/privacy-policy') { erb :privacy_policy }
 get('/ride-groups') { erb :ride_groups }
 get('/routes') { erb :routes }
 get('/safety') { erb :safety }
 get('/support-crew') { erb :support_crew }
-get('/terms-and-conditions') { erb :todo }
+get('/terms-and-conditions') { erb :terms_and_conditions }
 get('/testimonials') { erb :testimonials }
 
 # Camps
