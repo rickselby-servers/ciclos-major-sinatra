@@ -1,0 +1,14 @@
+<h1>Galleries</h1>
+
+<div class="row row-cols-3">
+  <% GALLERIES.each do |gallery| %>
+  <div class="col">
+    <h2><%= gallery[:name] %></h2>
+    <div class="text-center">
+      <a href="/gallery/<%= gallery[:slug] %>">
+        <img class="img-fluid" src="/img/gallery/<%= gallery[:slug] %>/thumb/<%= gallery[:cover] %>">
+      </a>
+    </div>
+  </div>
+  <% end %>
+</div>

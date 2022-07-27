@@ -36,7 +36,6 @@ get('/arrivals-and-transfers') { erb :arrivals_and_transfers }
 get('/bike-rental') { erb :bike_rental }
 get('/contact-us') { erb :todo }
 get('/faqs') { erb :faqs }
-get('/gallery') { erb :todo }
 get('/guides') { erb :guides }
 get('/lunch-stops') { erb :lunch_stops }
 get('/privacy-policy') { erb :privacy_policy }
@@ -66,3 +65,14 @@ get('/locations/alcudia') { erb :'locations/alcudia' }
 get('/locations/climate') { erb :'locations/climate' }
 get('/locations/mallorca') { erb :'locations/mallorca' }
 get('/locations/muro') { erb :'locations/muro' }
+
+GALLERIES = [
+  { slug: 'april-2022', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' }
+].freeze
+
+get('/gallery') { erb :gallery_index }
+get('/gallery/:slug') do
+  halt 404 unless GALLERIES.map { |g| g[:slug] }.include? params[:slug]
+  @gallery = GALLERIES.find { |g| g[:slug] == params[:slug] }
+  erb :gallery
+end
