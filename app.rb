@@ -67,7 +67,8 @@ get('/locations/mallorca') { erb :'locations/mallorca' }
 get('/locations/muro') { erb :'locations/muro' }
 
 GALLERIES = [
-  { slug: 'april-2022', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' }
+  { slug: '2022-04', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' },
+  { slug: '2022-04-312', name: '312 April 2022', cover: '61af91b4-464e-4156-a13e-2b0fc1a5bf92.jpg' },
 ].freeze
 
 get('/gallery') { erb :gallery_index }
