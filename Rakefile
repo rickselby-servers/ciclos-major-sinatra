@@ -70,3 +70,14 @@ namespace :webpack do
     sh node_command 'npx webpack --config webpack.prod.js'
   end
 end
+
+desc 'Resize gallery thumbnails'
+task :resize, [:directory] do |_, args|
+  FileUtils.cd "public/img/gallery/#{args.directory}/thumb" do
+    sh 'pwd'
+    sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
+    sh 'mogrify -auto-orient *'
+    sh 'mogrify -resize 420x *'
+    sh 'git add *'
+  end
+end
