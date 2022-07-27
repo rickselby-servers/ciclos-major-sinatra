@@ -1,0 +1,10 @@
+<h1>Galleries</h1>
+<h2><%= @gallery[:name] %></h2>
+
+<div class="row row-cols-3">
+  <% gallery_thumbnails.each_with_index do |image, index| %>
+    <div class="col mb-3 align-items-center d-flex">
+      <img class="img-fluid d-block gallery-thumb" src="<%= image %>" data-slide="<%= index %>">
+    </div>
+  <% end %>
+</div>
