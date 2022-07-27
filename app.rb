@@ -70,6 +70,16 @@ GALLERIES = [
   { slug: '2022-04', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' },
   { slug: '2022-04-312', name: '312 April 2022', cover: '61af91b4-464e-4156-a13e-2b0fc1a5bf92.jpg' },
   { slug: '2022-03', name: 'March 2022', cover: '73749231-A772-4D7E-90ED-175637017F2E.jpg' },
+  { slug: '2022-02', name: 'February 2022', cover: 'aaccc925-3e98-4661-957c-be050dafb4a6.jpg' },
+  { slug: '2021-10-struggle', name: 'The Struggle Week October 2021', cover: 'VRJH3343.jpg' },
+  { slug: '2021-10-vc-norwich', name: 'Autumn 2021 - VC Norwich', cover: '062d2e05-41d3-46ce-a519-946d4f81d8f0.jpg' },
+  { slug: '2021-09', name: 'Autumn 2021', cover: '281dad1e-4a88-4829-b1ff-a7d36a81a863.jpg' },
+  { slug: '2020-02-broughton', name: 'Broughton Cycling Group - February 2020', cover: '3.jpg' },
+  { slug: '2020-02-half-term', name: 'Half Term - February 2020', cover: '2.jpg' },
+  { slug: '2020-02-evesham', name: 'Evesham Wheelers - February 2020', cover: '3.jpg' },
+  { slug: '2020-02-pro-cycle', name: 'Pro Cycle Hire - February 2020', cover: '2.jpg' },
+  { slug: '2019-06', name: 'NEC Cycle Show 2019', cover: 'GO Draw Crop.jpg' },
+  { slug: '2019-09', name: 'De Ver Cycles - September 2019', cover: 'DVCP 3.jpg' }
 ].freeze
 
 get('/gallery') { erb :gallery_index }
