@@ -69,6 +69,7 @@ get('/locations/muro') { erb :'locations/muro' }
 GALLERIES = [
   { slug: '2022-04', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' },
   { slug: '2022-04-312', name: '312 April 2022', cover: '61af91b4-464e-4156-a13e-2b0fc1a5bf92.jpg' },
+  { slug: '2022-03', name: 'March 2022', cover: '73749231-A772-4D7E-90ED-175637017F2E.jpg' },
 ].freeze
 
 get('/gallery') { erb :gallery_index }
