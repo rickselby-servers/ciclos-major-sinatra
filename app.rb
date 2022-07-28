@@ -54,7 +54,7 @@ get('/camps/cycling-and-triathlon') { erb :'camps/cycling_and_triathlon' }
 # Camps booking pages
 get('/camps/2022-autumn') { erb :'camps/2022-aut' }
 get('/camps/2023-spring') { erb :'camps/2023-spr' }
-get('/camps/2023-autumn') { erb :todo }
+get('/camps/2023-autumn') { erb :'camps/2023-aut' }
 get('/camps/2023-312') { erb :todo }
 # Hotels
 get('/hotels/can-ribera') { erb :'hotels/can_ribera' }
