@@ -34,7 +34,7 @@ get('/') { erb :index }
 get('/about-us') { erb :about_us }
 get('/arrivals-and-transfers') { erb :arrivals_and_transfers }
 get('/bike-rental') { erb :bike_rental }
-get('/contact-us') { erb :todo }
+get('/contact-us') { erb :contact }
 get('/faqs') { erb :faqs }
 get('/guides') { erb :guides }
 get('/lunch-stops') { erb :lunch_stops }
