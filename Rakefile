@@ -43,6 +43,11 @@ def node_command(command, name: nil)
 end
 
 namespace :npm do
+  desc 'Run npm ci'
+  task :ci do
+    sh node_command 'npm ci'
+  end
+
   desc 'Run npm install'
   task :install do
     sh node_command 'npm install'
