@@ -5,7 +5,8 @@
     @extend .mb-3;
 
     > div.card {
-      @extend .text-bg-primary;
+      @extend .text-white;
+      background: linear-gradient(180deg, $secondary 40%, $gradient-bottom 100%);
 
       > div.card-body p {
         @extend .fs-5;
