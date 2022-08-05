@@ -1,11 +1,11 @@
 #ride-groups {
-  @extend .row, .row-cols-5, .text-center, .mb-3;
+  @extend .text-center, .mb-3;
 
-  > div {
-    @extend .col;
+  > div.col {
+    @extend .mb-3;
 
     > div.card {
-      @extend .h-100, .text-bg-primary;
+      @extend .text-bg-primary;
 
       > div.card-body p {
         @extend .fs-5;
