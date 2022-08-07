@@ -23,8 +23,11 @@ configure do
     if development?
       provider :developer, fields: [:name], uid_field: :name
     else
-      provider :microsoft_graph, ENV.fetch('AZURE_APPLICATION_CLIENT_ID', nil),
-               ENV.fetch('AZURE_APPLICATION_CLIENT_SECRET', nil)
+      provider :microsoft_graph, ENV.fetch('AD_CLIENT_ID', nil), ENV.fetch('AD_CLIENT_SECRET', nil), client_options: {
+        site: 'https://login.microsoftonline.com/',
+        token_url: "#{ENV.fetch('AD_TENANT', nil)}/oauth2/v2.0/token",
+        authorize_url: "#{ENV.fetch('AD_TENANT', nil)}/oauth2/v2.0/authorize"
+      }
     end
   end
 end
