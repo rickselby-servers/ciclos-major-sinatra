@@ -107,8 +107,9 @@ end
 get('/login') { erb :login }
 
 get '/auth/:provider/callback' do
-  p request.env['omniauth.auth']
   session[:user] = request.env['omniauth.auth']['info']['name']
+  # request.env['omniauth.auth']['info']['email']
+  # request.env['omniauth.auth']['uid']
   redirect '/admin'
 end
 
