@@ -119,6 +119,27 @@ $secondary-link-hover-color: shift-color($secondary, $link-shade-percentage) !de
   background-color: $secondary;
 }
 
+#partners-links {
+  @extend .bg-white, .p-3, .mx-0, .mb-3;
+  border-radius: $card-border-radius;
+
+  > div {
+    @extend .justify-content-around, .d-flex;
+  }
+}
+
+.partner-modal .modal-dialog {
+  @extend .modal-dialog-centered, .modal-lg;
+
+  .modal-body img {
+    @extend .float-start, .me-3, .mb-3;
+  }
+
+  .modal-footer {
+    @extend .justify-content-center;
+  }
+}
+
 .carousel-chevron-left {
   @extend .text-white;
   @extend .bg-black;
