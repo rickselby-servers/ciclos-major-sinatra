@@ -4,14 +4,14 @@ services:
   app:
     image: $CONTAINER
     restart: always
-    container_name: ciclos-major-sinatra-app
+    container_name: ciclos-major-sinatra-app-dev
     environment:
       CONTAINER_ROLE: app
       RACK_ENV: production
-      VIRTUAL_HOST: www.ciclosmajor.com
-      LETSENCRYPT_HOST: www.ciclosmajor.com
+      VIRTUAL_HOST: dev.ciclosmajor.com
+      LETSENCRYPT_HOST: dev.ciclosmajor.com
       LETSENCRYPT_EMAIL:
 
 networks:
   default:
-    name: ciclos-major-sinatra
+    name: ciclos-major-sinatra-dev
