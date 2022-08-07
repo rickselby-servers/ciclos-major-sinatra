@@ -1,0 +1,44 @@
+
+.header {
+  background: linear-gradient(180deg, $secondary 40%, $gradient-bottom 100%);
+
+  .chain {
+    background-image: url(/img/chain.png);
+    background-position: center;
+    background-size: contain;
+    height: 10px;
+    overflow-x: hidden;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.navbar {
+  padding: 0;
+  font-size: 90%;
+
+  .navbar-nav {
+    .nav-link,
+    .nav-link.active {
+      color: white;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $primary;
+
+    .dropdown-item {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $body-color;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $secondary;
+}
