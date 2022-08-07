@@ -9,12 +9,6 @@ module Helpers
       .sort
   end
 
-  def gallery_thumbnails
-    Dir["./public/img/gallery/#{@gallery[:slug]}/thumb/*"]
-      .map { |p| p.delete_prefix './public' }
-      .sort
-  end
-
   def price_list(prices, days)
     list = []
     total = 0

@@ -4,7 +4,7 @@
   <% GALLERIES.each do |gallery| %>
   <div class="col text-center mb-5">
     <a href="/gallery/<%= gallery[:slug] %>">
-      <img class="img-fluid d-block mb-1" src="/img/gallery/<%= gallery[:slug] %>/thumb/<%= gallery[:cover] %>">
+      <img class="img-fluid d-block mb-1" src="/img/gallery/<%= gallery[:slug] %>/<%= gallery[:cover] %>">
       <h2 class="h5"><%= gallery[:name] %></h2>
     </a>
   </div>

@@ -2,9 +2,9 @@
 <h2><%= @gallery[:name] %></h2>
 
 <div class="row row-cols-2 row-cols-md-3">
-  <% gallery_thumbnails.each_with_index do |image, index| %>
+  <% gallery_images.each_with_index do |image, index| %>
     <div class="col mb-3 align-items-center d-flex">
-      <img class="img-fluid d-block gallery-thumb" src="<%= image %>" data-slide="<%= index %>">
+      <img class="img-fluid d-block" src="<%= image %>" data-slide="<%= index %>">
     </div>
   <% end %>
 </div>
