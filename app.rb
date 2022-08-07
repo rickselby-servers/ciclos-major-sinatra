@@ -20,7 +20,11 @@ configure do
   enable :sessions
   set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
   use OmniAuth::Builder do
-    provider :developer, fields: [:name], uid_field: :name if development?
+    if development?
+      provider :developer, fields: [:name], uid_field: :name
+    else
+      provider :microsoft_graph, ENV['AZURE_APPLICATION_CLIENT_ID'], ENV['AZURE_APPLICATION_CLIENT_SECRET']
+    end
   end
 end
 
@@ -99,6 +103,7 @@ end
 get('/login') { erb :login }
 
 get '/auth/:provider/callback' do
+  p request.env['omniauth.auth']
   session[:user] = request.env['omniauth.auth']['info']['name']
   redirect '/admin'
 end

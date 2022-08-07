@@ -22,6 +22,7 @@ end
 
 gem 'erubi'
 gem 'omniauth'
+gem 'omniauth-microsoft_graph'
 gem 'rack'
 gem 'securerandom'
 gem 'sinatra'

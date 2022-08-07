@@ -46,6 +46,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v2.12.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.11.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v2.2.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.11, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -53,59 +54,7 @@
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">
-      <RakeTaskImpl id="rake">
-        <subtasks>
-          <RakeTaskImpl id="bundle">
-            <subtasks>
-              <RakeTaskImpl id="audit">
-                <subtasks>
-                  <RakeTaskImpl description="Checks the Gemfile.lock for insecure dependencies" fullCommand="bundle:audit:check" id="check" />
-                  <RakeTaskImpl description="Updates the bundler-audit vulnerability database" fullCommand="bundle:audit:update" id="update" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="" fullCommand="bundle:audit" id="audit" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl id="npm">
-            <subtasks>
-              <RakeTaskImpl description="Run npm ci" fullCommand="npm:ci" id="ci" />
-              <RakeTaskImpl description="Run npm install" fullCommand="npm:install" id="install" />
-              <RakeTaskImpl description="Run npm update" fullCommand="npm:update" id="update" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl description="Build and run production image" fullCommand="prod" id="prod" />
-          <RakeTaskImpl description="Resize gallery images" fullCommand="resize[directory]" id="resize[directory]" />
-          <RakeTaskImpl description="Run RuboCop" fullCommand="rubocop" id="rubocop" />
-          <RakeTaskImpl id="rubocop">
-            <subtasks>
-              <RakeTaskImpl description="Autocorrect RuboCop offenses (only when it's safe)" fullCommand="rubocop:autocorrect" id="autocorrect" />
-              <RakeTaskImpl description="Autocorrect RuboCop offenses (safe and unsafe)" fullCommand="rubocop:autocorrect_all" id="autocorrect_all" />
-              <RakeTaskImpl description="" fullCommand="rubocop:auto_correct" id="auto_correct" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl description="Run RSpec code examples" fullCommand="spec" id="spec" />
-          <RakeTaskImpl description="Bring up app" fullCommand="up" id="up" />
-          <RakeTaskImpl description="Run webpack for dev" fullCommand="webpack" id="webpack" />
-          <RakeTaskImpl id="webpack">
-            <subtasks>
-              <RakeTaskImpl description="Run webpack production" fullCommand="webpack:prod" id="prod" />
-              <RakeTaskImpl description="Run webpack watch" fullCommand="webpack:watch" id="watch" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl id="bundler">
-            <subtasks>
-              <RakeTaskImpl description="" fullCommand="bundler:audit" id="audit" />
-              <RakeTaskImpl id="audit">
-                <subtasks>
-                  <RakeTaskImpl description="" fullCommand="bundler:audit:check" id="check" />
-                  <RakeTaskImpl description="" fullCommand="bundler:audit:update" id="update" />
-                </subtasks>
-              </RakeTaskImpl>
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl description="" fullCommand="resize" id="resize" />
-        </subtasks>
-      </RakeTaskImpl>
+      <RakeTaskImpl id="rake" />
     </option>
   </component>
 </module>
