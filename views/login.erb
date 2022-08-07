@@ -16,5 +16,13 @@
         Login with Developer
       </button>
     </form>
+  <% else %>
+    <form method="post" action="/auth/microsoft_graph">
+      <input type="hidden" name="authenticity_token" value="<%= request.env["rack.session"]["csrf"] %>">
+      <button type="submit" class="btn btn-primary">
+        <span class="fa-solid fa-fw fa-arrow-right-to-bracket"></span>
+        Login with Microsoft
+      </button>
+    </form>
   <% end %>
 <% end %>
