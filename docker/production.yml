@@ -12,6 +12,8 @@ services:
       LETSENCRYPT_HOST: www.ciclosmajor.com
       LETSENCRYPT_EMAIL:
       SESSION_SECRET:
+      AZURE_APPLICATION_CLIENT_ID:
+      AZURE_APPLICATION_CLIENT_SECRET:
 
 networks:
   default:

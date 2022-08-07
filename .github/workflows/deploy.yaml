@@ -1,10 +1,10 @@
 name: Deploy
 
 on:
-  workflow_run:
-    workflows: ["Test"]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: ["Test"]
+#    types:
+#      - completed
   workflow_dispatch:
 
 concurrency:
@@ -86,6 +86,8 @@ jobs:
           DOCKER_HOST: ${{ secrets.LINODE_HOST }}
           DOCKER_TLS_VERIFY: 1
           LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
+          AZURE_APPLICATION_CLIENT_ID: ${{ secrets.AZURE_APPLICATION_CLIENT_ID }}
+          AZURE_APPLICATION_CLIENT_SECRET: ${{ secrets.AZURE_APPLICATION_CLIENT_SECRET }}
 
 #  prod-deploy:
 #    name: Deploy to dev server
@@ -115,3 +117,5 @@ jobs:
 #          DOCKER_TLS_VERIFY: 1
 #          LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
 #          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+#          AZURE_APPLICATION_CLIENT_ID: ${{ secrets.AZURE_APPLICATION_CLIENT_ID }}
+#          AZURE_APPLICATION_CLIENT_SECRET: ${{ secrets.AZURE_APPLICATION_CLIENT_SECRET }}

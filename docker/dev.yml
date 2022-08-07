@@ -11,6 +11,8 @@ services:
       VIRTUAL_HOST: dev.ciclosmajor.com
       LETSENCRYPT_HOST: dev.ciclosmajor.com
       LETSENCRYPT_EMAIL:
+      AZURE_APPLICATION_CLIENT_ID:
+      AZURE_APPLICATION_CLIENT_SECRET:
 
 networks:
   default:
