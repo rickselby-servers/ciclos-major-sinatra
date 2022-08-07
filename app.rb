@@ -23,7 +23,8 @@ configure do
     if development?
       provider :developer, fields: [:name], uid_field: :name
     else
-      provider :microsoft_graph, ENV['AZURE_APPLICATION_CLIENT_ID'], ENV['AZURE_APPLICATION_CLIENT_SECRET']
+      provider :microsoft_graph, ENV.fetch('AZURE_APPLICATION_CLIENT_ID', nil),
+               ENV.fetch('AZURE_APPLICATION_CLIENT_SECRET', nil)
     end
   end
 end
