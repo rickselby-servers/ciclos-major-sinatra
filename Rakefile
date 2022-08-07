@@ -76,9 +76,9 @@ namespace :webpack do
   end
 end
 
-desc 'Resize gallery thumbnails'
+desc 'Resize gallery images'
 task :resize, [:directory] do |_, args|
-  FileUtils.cd "public/img/gallery/#{args.directory}/thumb" do
+  FileUtils.cd "public/img/gallery/#{args.directory}" do
     sh 'pwd'
     sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
     sh 'mogrify -auto-orient *'
