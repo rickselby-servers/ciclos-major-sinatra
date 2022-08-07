@@ -17,7 +17,8 @@ configure do
   $stdout.sync = true
   helpers Helpers
 
-  use Rack::Session::Cookie
+  enable :sessions
+  set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
   use OmniAuth::Builder do
     provider :developer, fields: [:name], uid_field: :name if development?
   end

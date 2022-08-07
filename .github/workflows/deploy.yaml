@@ -86,3 +86,32 @@ jobs:
           DOCKER_HOST: ${{ secrets.LINODE_HOST }}
           DOCKER_TLS_VERIFY: 1
           LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
+
+#  prod-deploy:
+#    name: Deploy to dev server
+#    runs-on: ubuntu-latest
+#    needs: build
+#    if: success() && github.ref == 'refs/heads/main'
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: docker/login-action@v2
+#        with:
+#          registry: ghcr.io
+#          username: ${{ github.actor }}
+#          password: ${{ secrets.GITHUB_TOKEN }}
+#      - uses: rickselby-web-server/actions/server-certificate@main
+#        with:
+#          CA: ${{ secrets.LINODE_CA }}
+#          CLIENT_CERT: ${{ secrets.LINODE_CLIENT_CERT }}
+#          CLIENT_KEY: ${{ secrets.LINODE_CLIENT_KEY }}
+#      - uses: rickselby-web-server/actions/docker-compose-deploy@main
+#        with:
+#          COMPOSE_FILE_PATH: docker/dev.yml
+#          CONNECT_CONTAINERS: nginx-proxy
+#          STACK_NAME: ciclos-major-sinatra-dev
+#        env:
+#          CONTAINER: ghcr.io/${{ github.repository }}:${{ github.sha }}
+#          DOCKER_HOST: ${{ secrets.LINODE_HOST }}
+#          DOCKER_TLS_VERIFY: 1
+#          LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
+#          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
