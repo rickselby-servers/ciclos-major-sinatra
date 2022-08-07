@@ -1,0 +1,20 @@
+
+<% if logged_in? %>
+  <p>You are already logged in.</p>
+
+  <p>
+    <a href="/admin" class="btn btn-primary">Admin Pages</a>
+  </p>
+
+  <%== erb :_logout %>
+<% else %>
+  <% if settings.development? %>
+    <form method="post" action="/auth/developer">
+      <input type="hidden" name="authenticity_token" value="<%= request.env["rack.session"]["csrf"] %>">
+      <button type="submit" class="btn btn-primary">
+        <span class="fa-solid fa-fw fa-arrow-right-to-bracket"></span>
+        Login with Developer
+      </button>
+    </form>
+  <% end %>
+<% end %>

@@ -9,6 +9,10 @@ module Helpers
       .sort
   end
 
+  def logged_in?
+    session.key?(:user) && !session.fetch(:user).empty?
+  end
+
   def price_list(prices, days)
     list = []
     total = 0

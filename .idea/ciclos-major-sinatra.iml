@@ -17,9 +17,11 @@
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.7.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mustermann (v2.0.2, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth (v2.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.22.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.1.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.4, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -66,11 +68,13 @@
           </RakeTaskImpl>
           <RakeTaskImpl id="npm">
             <subtasks>
+              <RakeTaskImpl description="Run npm ci" fullCommand="npm:ci" id="ci" />
               <RakeTaskImpl description="Run npm install" fullCommand="npm:install" id="install" />
               <RakeTaskImpl description="Run npm update" fullCommand="npm:update" id="update" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Build and run production image" fullCommand="prod" id="prod" />
+          <RakeTaskImpl description="Resize gallery images" fullCommand="resize[directory]" id="resize[directory]" />
           <RakeTaskImpl description="Run RuboCop" fullCommand="rubocop" id="rubocop" />
           <RakeTaskImpl id="rubocop">
             <subtasks>
@@ -99,6 +103,7 @@
               </RakeTaskImpl>
             </subtasks>
           </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="resize" id="resize" />
         </subtasks>
       </RakeTaskImpl>
     </option>

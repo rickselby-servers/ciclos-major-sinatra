@@ -16,6 +16,11 @@ configure do
   LOGGER = Logger.new $stdout
   $stdout.sync = true
   helpers Helpers
+
+  use Rack::Session::Cookie
+  use OmniAuth::Builder do
+    provider :developer, fields: [:name], uid_field: :name if development?
+  end
 end
 
 error 404 do
@@ -87,3 +92,32 @@ get('/gallery/:slug') do
   @gallery = GALLERIES.find { |g| g[:slug] == params[:slug] }
   erb :gallery
 end
+
+# Omniauth
+
+get('/login') { erb :login }
+
+get '/auth/:provider/callback' do
+  session[:user] = request.env['omniauth.auth']['info']['name']
+  redirect '/admin'
+end
+
+if development?
+  post '/auth/developer/callback' do
+    session[:user] = request.env['omniauth.auth']['info']['name']
+    redirect '/admin'
+  end
+end
+
+post '/logout' do
+  session.destroy
+  redirect '/'
+end
+
+# Admin pages
+
+before '/admin/?*' do
+  halt 404 unless logged_in?
+end
+
+get('/admin') { erb :admin }
