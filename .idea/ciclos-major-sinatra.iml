@@ -16,12 +16,19 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.9.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.4.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v2.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.4.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.7.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mustermann (v2.0.2, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oauth2 (v2.0.6, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v2.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-microsoft_graph (v1.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.7.3, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.22.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.1.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.4, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -29,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.0.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rash_alt (v0.4.12, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.11.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.5.0, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -51,10 +59,63 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.11, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="version_gem (v1.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">
-      <RakeTaskImpl id="rake" />
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl id="bundle">
+            <subtasks>
+              <RakeTaskImpl id="audit">
+                <subtasks>
+                  <RakeTaskImpl description="Checks the Gemfile.lock for insecure dependencies" fullCommand="bundle:audit:check" id="check" />
+                  <RakeTaskImpl description="Updates the bundler-audit vulnerability database" fullCommand="bundle:audit:update" id="update" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="" fullCommand="bundle:audit" id="audit" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="npm">
+            <subtasks>
+              <RakeTaskImpl description="Run npm ci" fullCommand="npm:ci" id="ci" />
+              <RakeTaskImpl description="Run npm install" fullCommand="npm:install" id="install" />
+              <RakeTaskImpl description="Run npm update" fullCommand="npm:update" id="update" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Build and run production image" fullCommand="prod" id="prod" />
+          <RakeTaskImpl description="Resize gallery images" fullCommand="resize[directory]" id="resize[directory]" />
+          <RakeTaskImpl description="Run RuboCop" fullCommand="rubocop" id="rubocop" />
+          <RakeTaskImpl id="rubocop">
+            <subtasks>
+              <RakeTaskImpl description="Autocorrect RuboCop offenses (only when it's safe)" fullCommand="rubocop:autocorrect" id="autocorrect" />
+              <RakeTaskImpl description="Autocorrect RuboCop offenses (safe and unsafe)" fullCommand="rubocop:autocorrect_all" id="autocorrect_all" />
+              <RakeTaskImpl description="" fullCommand="rubocop:auto_correct" id="auto_correct" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Run RSpec code examples" fullCommand="spec" id="spec" />
+          <RakeTaskImpl description="Bring up app" fullCommand="up" id="up" />
+          <RakeTaskImpl description="Run webpack for dev" fullCommand="webpack" id="webpack" />
+          <RakeTaskImpl id="webpack">
+            <subtasks>
+              <RakeTaskImpl description="Run webpack production" fullCommand="webpack:prod" id="prod" />
+              <RakeTaskImpl description="Run webpack watch" fullCommand="webpack:watch" id="watch" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="bundler">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="bundler:audit" id="audit" />
+              <RakeTaskImpl id="audit">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="bundler:audit:check" id="check" />
+                  <RakeTaskImpl description="" fullCommand="bundler:audit:update" id="update" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="resize" id="resize" />
+        </subtasks>
+      </RakeTaskImpl>
     </option>
   </component>
 </module>
