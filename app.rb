@@ -102,6 +102,34 @@ get('/gallery/:slug') do
   erb :gallery
 end
 
+# Redirects
+
+get('/312-mallorca/?') { redirect '/camps/312' }
+get('/about-us/') { redirect '/about-us' }
+get('/about-us/ride-leaders/?') { redirect '/guides' }
+get('/about-us/support-crew/?') { redirect '/support-crew' }
+get('/bike-rental-in-mallorca/?') { redirect '/bike-rental' }
+get('/camps/?') { redirect '/' }
+get('/camps/bespoke-camps/?') { redirect '/camps/bespoke' }
+get('/camps/cycling-and-triathlon/') { redirect '/camps/cycling_and_triathlon' }
+get('/contact-us/') { redirect '/contact-us' }
+get('/gallery/') { redirect '/gallery' }
+get('/hotels-and-locations/?') { redirect '/' }
+get('/hotels-and-locations/alcudia/?') { redirect '/locations/alcudia' }
+get('/hotels-and-locations/arrivals-and-transfers/?') { redirect '/arrivals-and-transfers' }
+get('/hotels-and-locations/can-ribera-rural-hotel-by-zafiro-muro/?') { redirect '/hotels/can-ribera' }
+get('/hotels-and-locations/climate/?') { redirect '/locations/climate' }
+get('/hotels-and-locations/mallorca/?') { redirect '/locations/mallorca' }
+get('/hotels-and-locations/muro/?') { redirect '/locations/muro' }
+get('/hotels-and-locations/zafiro-palace/?') { redirect '/hotels/zafiro-palace' }
+get('/hotels-and-locations/zafiro-tropic/?') { redirect '/hotels/zafiro-tropic' }
+get('/riding-groups-and-routes/?') { redirect '/' }
+get('/riding-groups-and-routes/lunch-stops/?') { redirect '/lunch-stops' }
+get('/riding-groups-and-routes/our-routes/?') { redirect '/routes' }
+get('/riding-groups-and-routes/ride-groups/?') { redirect '/ride-groups' }
+get('/riding-groups-and-routes/safety/?') { redirect '/safety' }
+get('/testimonials/') { redirect '/testimonials' }
+
 # Omniauth
 
 get('/login') { erb :login }
