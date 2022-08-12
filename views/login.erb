@@ -1,12 +1,12 @@
 
 <% if logged_in? %>
+  <%== erb :_logout %>
+
   <p>You are already logged in.</p>
 
   <p>
     <a href="/admin" class="btn btn-primary">Admin Pages</a>
   </p>
-
-  <%== erb :_logout %>
 <% else %>
   <% if settings.development? %>
     <form method="post" action="/auth/developer">
