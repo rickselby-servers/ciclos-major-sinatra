@@ -33,7 +33,7 @@ configure do
 end
 
 error 404 do
-  '404: Not found'
+  erb :'404'
 end
 
 error do
