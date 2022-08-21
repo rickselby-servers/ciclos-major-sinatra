@@ -15,6 +15,11 @@ services:
       AD_TENANT:
       AD_CLIENT_ID:
       AD_CLIENT_SECRET:
+    volumes:
+      - ciclos-major-sinatra-db:/database
+
+volumes:
+  ciclos-major-sinatra-db:
 
 networks:
   default:
