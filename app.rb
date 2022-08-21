@@ -177,7 +177,7 @@ end
 get('/admin') { erb :admin }
 
 post '/admin/text' do
-  DB[:text].insert_conflict(:replace).insert(key: params[:key], text: params[:text])
+  params.each { |k, v| DB[:text].insert_conflict(:replace).insert(key: k, text: v) }
   settings.set :text, nil
   redirect back
 end
