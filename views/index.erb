@@ -1,20 +1,15 @@
-<div class="p-3">
-  <div class="fs-3 fw-bold text-center">
-    <%== erb :_edit, locals: { key: 'index.header', default: 'Majorca Training and Tri Camps and Guided Cycling Holidays
-    Book Today for the Autumn Season
-    We Will Be Ready to Show You the Best Roads on the Island
-    Hire Bikes now available via Ciclos Major' } %>
-  </div>
+<div class="p-3 fs-3 fw-bold text-center tinymce-body" id="index.header">
+  <%== get_text('index.header', 'Majorca Training and Tri Camps and Guided Cycling Holidays<br />Book Today for the Autumn Season<br />We Will Be Ready to Show You the Best Roads on the Island<br />Hire Bikes now available via Ciclos Major') %>
 </div>
 
-<div class="p-3 mb-3 text-bg-primary text-center">
-  Autumn season - Saturday 24th September - Saturday 5th November 2022
+<div class="p-3 mb-3 text-bg-primary text-center tinymce-body" id="index.block">
+<%== get_text('index.block', 'Autumn season - Saturday 24th September - Saturday 5th November 2022
   <br />
   As ever there is our normal 10% discount for returning clients! If you have already booked the discounts will be
   applied automatically.
   <br />
   Ciclos Major are are continuing our partnership with Bikefriends Schon in offering a range of hire bikes in Alcudia.
-  Click on <a href="/bike-rental">Bike Rental in Mallorca</a> for further details.
+  Click on <a href="/bike-rental">Bike Rental in Mallorca</a> for further details.') %>
 </div>
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center mb-3">
@@ -125,60 +120,64 @@
   </div>
 </div>
 
-<p>
-  Ciclos Major is all about experience, and we aim to provide the ultimate Mallorcan cycling experience! When you travel
-  with us we will cater for all your needs to the last degree and from the minute we collect you from the airport, all
-  we want you to have to think about is fulfilling your sporting goals: that might be tackling all the major climbs on
-  the island; preparing for a forthcoming extreme endurance event, training for your local 10-mile time trial or just
-  enjoying a relaxing few days cycling around Mallorca, checking out the ‘coffee culture’ of the numerous towns and
-  villages that litter the interior of the island.
-</p>
-<p>
-  We can provide bespoke cycling and training holidays for groups of friends, cycling and triathlon clubs or simply
-  like-minded individuals.
-</p>
-<p>
-  We resume our Autumn season in both hotels from Saturday 24th September until Saturday 5th November. Dates for 2023
-  will be announced shortly.
-</p>
-<p>
-  For the triathletes we can not only offer you a challenging week of cycling in Mallorca but there is also the
-  opportunity to train in the heated swimming pool at the <a href="/hotels/zafiro-palace">Zafiro Palace Hotel</a> and/or
-  to run along the renowned bays of Alcudia and Pollensa.
-</p>
-<p>
-  A qualified triathlon coach will be available to support you with your swimming objectives in the heated pool at the
-  <a href="/hotels/zafiro-palace">Zafiro Palace Hotel</a>. Whilst this period will focus on triathlon training, this
-  does not preclude cyclists coming in these weeks and likewise triathletes will be most welcome at any time we are
-  running camps. There is the possibility of further swimming coaching, such as open-water swimming or swim smooth
-  coaching at additional cost. Please enquire using the Bespoke Holiday Enquiry Form.
-</p>
-<p>
-  Ciclos Major represents the evolution of an existing provider of cycling trips to the island and the name, whilst
-  obviously reflecting cycling, also conjures up the image of the highest peak on the island ‘Puig Major’ which you will
-  surely tackle in your time with us.
-</p>
-<p>
-  Our logo design (and that of our cycling jersey) not only represents those lofty peaks, but also your heartbeat as you
-  enjoy the finest roads that Mallorca has to offer!!
-</p>
-<h2>What’s different about Mallorcan Cycling Holidays with Ciclos Major?</h2>
-<p>
-  We pride ourselves on giving our clients a total experience when they travel with us, and to that end there are
-  certain things we don’t do... we don’t just take the easy route and simply deliver our clients to the same old
-  ‘honeypots’ that feature in every cycling magazine, and we don’t just follow the same routes, week in, week out!
-</p>
-<p>
-  What we DO strive to do is to give our clients a total experience by constantly sourcing new and interesting routes,
-  villages, climbs and café stops in new and exciting areas. We DO make sure our clients get to ride on different and
-  exciting roads, using all our guides’ vast knowledge of the island’s roads and routes. We DO strive to make sure our
-  clients’ needs and expectations are met, and in terms of cycling we don’t only aim for them to return from their break
-  a faster, fitter cyclist, we aim for them to return as a BETTER cyclist! We DO also understand that our clients are
-  having a well-earned break from their daily lives, so we also offer a social programme to enable them to not just
-  remember the riding when they return home. We have a network of local bars, restaurants and cafés who always offer a
-  warm welcome to our clients. For our clients we even slot in a bit of down-time to take in some of the local culture,
-  such as live music and cultural events.
-</p>
-<p>
-  We’ll give you a trip to remember, just let us show you how!
-</p>
+<div class="tinymce-body" id="index.body">
+<%== get_text('index.body', '
+  <p>
+    Ciclos Major is all about experience, and we aim to provide the ultimate Mallorcan cycling experience! When you travel
+    with us we will cater for all your needs to the last degree and from the minute we collect you from the airport, all
+    we want you to have to think about is fulfilling your sporting goals: that might be tackling all the major climbs on
+    the island; preparing for a forthcoming extreme endurance event, training for your local 10-mile time trial or just
+    enjoying a relaxing few days cycling around Mallorca, checking out the ‘coffee culture’ of the numerous towns and
+    villages that litter the interior of the island.
+  </p>
+  <p>
+    We can provide bespoke cycling and training holidays for groups of friends, cycling and triathlon clubs or simply
+    like-minded individuals.
+  </p>
+  <p>
+    We resume our Autumn season in both hotels from Saturday 24th September until Saturday 5th November. Dates for 2023
+    will be announced shortly.
+  </p>
+  <p>
+    For the triathletes we can not only offer you a challenging week of cycling in Mallorca but there is also the
+    opportunity to train in the heated swimming pool at the <a href="/hotels/zafiro-palace">Zafiro Palace Hotel</a> and/or
+    to run along the renowned bays of Alcudia and Pollensa.
+  </p>
+  <p>
+    A qualified triathlon coach will be available to support you with your swimming objectives in the heated pool at the
+    <a href="/hotels/zafiro-palace">Zafiro Palace Hotel</a>. Whilst this period will focus on triathlon training, this
+    does not preclude cyclists coming in these weeks and likewise triathletes will be most welcome at any time we are
+    running camps. There is the possibility of further swimming coaching, such as open-water swimming or swim smooth
+    coaching at additional cost. Please enquire using the Bespoke Holiday Enquiry Form.
+  </p>
+  <p>
+    Ciclos Major represents the evolution of an existing provider of cycling trips to the island and the name, whilst
+    obviously reflecting cycling, also conjures up the image of the highest peak on the island ‘Puig Major’ which you will
+    surely tackle in your time with us.
+  </p>
+  <p>
+    Our logo design (and that of our cycling jersey) not only represents those lofty peaks, but also your heartbeat as you
+    enjoy the finest roads that Mallorca has to offer!!
+  </p>
+  <h2>What’s different about Mallorcan Cycling Holidays with Ciclos Major?</h2>
+  <p>
+    We pride ourselves on giving our clients a total experience when they travel with us, and to that end there are
+    certain things we don’t do... we don’t just take the easy route and simply deliver our clients to the same old
+    ‘honeypots’ that feature in every cycling magazine, and we don’t just follow the same routes, week in, week out!
+  </p>
+  <p>
+    What we DO strive to do is to give our clients a total experience by constantly sourcing new and interesting routes,
+    villages, climbs and café stops in new and exciting areas. We DO make sure our clients get to ride on different and
+    exciting roads, using all our guides’ vast knowledge of the island’s roads and routes. We DO strive to make sure our
+    clients’ needs and expectations are met, and in terms of cycling we don’t only aim for them to return from their break
+    a faster, fitter cyclist, we aim for them to return as a BETTER cyclist! We DO also understand that our clients are
+    having a well-earned break from their daily lives, so we also offer a social programme to enable them to not just
+    remember the riding when they return home. We have a network of local bars, restaurants and cafés who always offer a
+    warm welcome to our clients. For our clients we even slot in a bit of down-time to take in some of the local culture,
+    such as live music and cultural events.
+  </p>
+  <p>
+    We’ll give you a trip to remember, just let us show you how!
+  </p>
+') %>
+</div>
