@@ -3,7 +3,7 @@
 # Helper functions for sinatra
 module Helpers
   def all_text
-    DB[:text].all.to_h { |v| [v[:key], v[:text]]}
+    DB[:text].all.to_h { |v| [v[:key], v[:text]] }
   end
 
   def gallery_images
@@ -22,7 +22,7 @@ module Helpers
   end
 
   def nl2br(string)
-    string.gsub("\n\r","<br />").gsub("\r", "").gsub("\n", "<br />") if string
+    string.gsub("\n\r", '<br />').delete("\r").gsub("\n", '<br />') if string
   end
 
   def price_list(prices, days)
