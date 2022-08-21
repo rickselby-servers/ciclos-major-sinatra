@@ -13,6 +13,10 @@ module Helpers
     session.key?(:user) && !session.fetch(:user).empty?
   end
 
+  def nl2br(string)
+    string.gsub("\n\r","<br />").gsub("\r", "").gsub("\n", "<br />") if string
+  end
+
   def price_list(prices, days)
     list = []
     total = 0
