@@ -15,9 +15,9 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.16, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.9.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.4.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v2.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubi (v1.11.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.5.2, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v3.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -47,8 +47,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.11.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.11.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.11.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.32.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.19.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.33.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.20.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.14.3, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rake (v0.6.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v2.12.1, RVM: ruby-2.7.6) [gem]" level="application" />
