@@ -8,6 +8,13 @@ Bundler.require
 
 require_relative 'helpers'
 
+def create_db
+  DB.create_table :text do
+    String :key, primary_key: true, null: false
+    String :text, text: true
+  end
+end
+
 configure do
   set :erb, escape_html: true
   set :show_exceptions, :after_handler if development?
@@ -34,13 +41,6 @@ configure do
 
   create_db unless DB.table_exists? :text
   set :text, nil
-end
-
-def create_db
-  DB.create_table :text do
-    String :key, primary_key: true, null: false
-    String :text, text: true
-  end
 end
 
 error 404 do
