@@ -13,6 +13,7 @@ configure do
   set :show_exceptions, :after_handler if development?
   disable :dump_errors unless development?
   ASSETS = JSON.parse(File.read('public/manifest.json'), symbolize_names: true)
+  DB = Sequel.sqlite('text.db')
   LOGGER = Logger.new $stdout
   $stdout.sync = true
   helpers Helpers
@@ -30,6 +31,15 @@ configure do
       }
     end
   end
+
+  unless DB.table_exists? :text
+    DB.create_table :text do
+      String :key, primary_key: true, null: false
+      String :text, text: true
+    end
+  end
+
+  set :text, nil
 end
 
 error 404 do
@@ -42,6 +52,10 @@ error do
   LOGGER.error error.backtrace.join("\n\t")
 
   'An error occurred - sorry!'
+end
+
+before do
+  settings.set :text, all_text if settings.text.nil?
 end
 
 get('/') { erb :index }
@@ -160,3 +174,9 @@ before '/admin/?*' do
 end
 
 get('/admin') { erb :admin }
+
+post '/admin/text' do
+  DB[:text].insert_conflict(:replace).insert(key: params[:key], text: params[:text])
+  settings.set :text, nil
+  redirect back
+end
