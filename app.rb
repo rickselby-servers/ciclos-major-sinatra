@@ -32,14 +32,15 @@ configure do
     end
   end
 
-  unless DB.table_exists? :text
-    DB.create_table :text do
-      String :key, primary_key: true, null: false
-      String :text, text: true
-    end
-  end
-
+  create_db unless DB.table_exists? :text
   set :text, nil
+end
+
+def create_db
+  DB.create_table :text do
+    String :key, primary_key: true, null: false
+    String :text, text: true
+  end
 end
 
 error 404 do

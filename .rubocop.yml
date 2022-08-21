@@ -3,6 +3,7 @@ require:
   - rubocop-performance
   - rubocop-rake
   - rubocop-rspec
+  - rubocop-sequel
 
 # Show URLs for each cop
 AllCops:
