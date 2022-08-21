@@ -18,6 +18,7 @@ group :development do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
+  gem 'rubocop-sequel', require: false
 end
 
 gem 'erubi'
@@ -25,4 +26,6 @@ gem 'omniauth'
 gem 'omniauth-microsoft_graph'
 gem 'rack'
 gem 'securerandom'
+gem 'sequel'
 gem 'sinatra'
+gem 'sqlite3'

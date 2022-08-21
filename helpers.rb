@@ -2,6 +2,10 @@
 
 # Helper functions for sinatra
 module Helpers
+  def all_text
+    DB[:text].all.to_h { |v| [v[:key], v[:text]] }
+  end
+
   def gallery_images
     Dir["./public/img/gallery/#{@gallery[:slug]}/*"]
       .select { |f| File.file?(f) }
@@ -9,8 +13,16 @@ module Helpers
       .sort
   end
 
+  def get_text(key, default)
+    settings.text.fetch(key, default)
+  end
+
   def logged_in?
     session.key?(:user) && !session.fetch(:user).empty?
+  end
+
+  def nl2br(string)
+    string.gsub("\n\r", '<br />').delete("\r").gsub("\n", '<br />') if string
   end
 
   def price_list(prices, days)

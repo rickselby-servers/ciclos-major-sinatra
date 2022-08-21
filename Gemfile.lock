@@ -89,14 +89,18 @@ GEM
       rubocop (~> 1.0)
     rubocop-rspec (2.12.1)
       rubocop (~> 1.31)
+    rubocop-sequel (0.3.4)
+      rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     securerandom (0.2.0)
+    sequel (5.58.0)
     sinatra (2.2.2)
       mustermann (~> 2.0)
       rack (~> 2.2)
       rack-protection (= 2.2.2)
       tilt (~> 2.0)
+    sqlite3 (1.4.4)
     thor (1.2.1)
     tilt (2.0.11)
     unicode-display_width (2.2.0)
@@ -119,8 +123,11 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rake
   rubocop-rspec
+  rubocop-sequel
   securerandom
+  sequel
   sinatra
+  sqlite3
 
 BUNDLED WITH
    2.3.16
