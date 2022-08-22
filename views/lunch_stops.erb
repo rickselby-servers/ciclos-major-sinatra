@@ -1,4 +1,8 @@
+<div class="tinymce-body" id="lunch.title">
+  <%== get_text('lunch.title', '
 <h1>Lunch Stops</h1>
+') %>
+</div>
 
 <%== erb :_carousel, locals: { path: 'lunch-stops', count: 6, alt: [
   'Cyclists sitting at a long table in a cafe',
@@ -9,6 +13,8 @@
   'Two cyclists sitting at a table eating lunch',
 ] } %>
 
+<div class="tinymce-body" id="lunch.body">
+  <%== get_text('lunch.body', '
 <p>On most days the lunch stop for all groups apart from the Affogato Group is at the same location. This is designed to
   create a focus point for the riders, to let riders change groups if they wish and to enable us all to spend some
   social time together.</p>
@@ -26,3 +32,5 @@
   stop.</p>
 
 <p>All groups will wait for mechanicals and punctures.</p>
+') %>
+</div>
