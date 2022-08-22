@@ -26,7 +26,7 @@ configure do
   helpers Helpers
 
   enable :sessions
-  set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
+  set :session_secret, development? ? 'foo' : ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
   use OmniAuth::Builder do
     if development?
       provider :developer, fields: [:name], uid_field: :name
@@ -153,13 +153,13 @@ get '/auth/:provider/callback' do
   session[:user] = request.env['omniauth.auth']['info']['name']
   # request.env['omniauth.auth']['info']['email']
   # request.env['omniauth.auth']['uid']
-  redirect '/admin'
+  redirect '/'
 end
 
 if development?
   post '/auth/developer/callback' do
     session[:user] = request.env['omniauth.auth']['info']['name']
-    redirect '/admin'
+    redirect '/'
   end
 end
 
@@ -174,10 +174,8 @@ before '/admin/?*' do
   halt 404 unless logged_in?
 end
 
-get('/admin') { erb :admin }
-
 post '/admin/text' do
-  DB[:text].insert_conflict(:replace).insert(key: params[:key], text: params[:text])
+  params.each { |k, v| DB[:text].insert_conflict(:replace).insert(key: k, text: v) }
   settings.set :text, nil
   redirect back
 end

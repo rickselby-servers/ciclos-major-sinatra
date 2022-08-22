@@ -1,11 +1,16 @@
+<div class="tinymce-body" id="hotels.tropic.header">
+  <%== get_text('hotels.tropic.header', '
 <h1>Zafiro Tropic Hotel – Alcudia</h1>
+') %>
+</div>
 
 <%== erb :_carousel, locals: { path: 'zafiro-tropic', count: 3, alt: [
   'The hotel grounds',
   'A small kitchen',
   'Lots of bikes stored on racks',
 ] } %>
-
+<div class="tinymce-body" id="hotels.tropic.body">
+<%== get_text('hotels.tropic.body', '
 <p>The Zafiro Tropic & Spa Aparthotel is a four-star hotel located in the heart of Alcudia Harbour. Close to restaurants
   and shops, the hotel is also only 200 metres from the magnificent Alcudia Bay.</p>
 
@@ -33,3 +38,5 @@
     Mallorca
   </p>
 </blockquote>
+') %>
+</div>

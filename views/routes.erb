@@ -1,4 +1,8 @@
+<div class="tinymce-body" id="routes.title">
+  <%== get_text('routes.title', '
 <h1>Our Routes</h1>
+') %>
+</div>
 
 <%== erb :_carousel, locals: { path: 'routes', count: 4, alt: [
   'Picturesque views of the island',
@@ -7,6 +11,8 @@
   'Picturesque views of the island',
 ] } %>
 
+<div class="tinymce-body" id="routes.body">
+<%== get_text('routes.body', '
 <p>We pride ourselves on having the best selection of routes and rides on the island, and we have some great rides that
   our guides keep ‘up their sleeve’ ready to entertain you! To whet your appetite however, here is a brief description
   of some of the more well-known rides...</p>
@@ -42,3 +48,5 @@
   afford you magnificent views. Once past the village of Orient these switchbacks will sap your legs on the way up and
   test your descending skills on the way down to Bunyola. After lunch a relatively easy ride, albeit of 50 km back to
   the hotel.</p>
+') %>
+</div>

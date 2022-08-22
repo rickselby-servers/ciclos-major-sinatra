@@ -1,4 +1,8 @@
+<div class="tinymce-body" id="hotels.can-ribera.header">
+  <%== get_text('hotels.can-ribera.header', '
 <h1>Can Ribera Rural Hotel by Zafiro – Muro</h1>
+') %>
+</div>
 
 <%== erb :_carousel, locals: { path: 'can-ribera', count: 9, alt: [
   'The main hotel door with a sign reading \'Can Ribera\'',
@@ -12,6 +16,8 @@
   'A top-down view of the outdoor restaurant',
 ] } %>
 
+<div class="tinymce-body" id="hotels.can-ribera.body">
+<%== get_text('hotels.can-ribera.body', '
 <p>The Can Ribera Rural Hotel by Zafiro is a four-star hotel located in Muro.</p>
 
 <p>A fully renovated and elegantly designed nineteenth century building located in Muro, a small town in the centre of
@@ -28,10 +34,12 @@
   comforting swim and a privileged panoramic view of the surroundings after a day of cycling in the warm Mallorquin
   sunshine.</p>
 
-<blockquote>
+<blockquote class="blockquote">
   <p>
     C/ Comtat 1, 07440 Muro (Illes Balears)
     <br>
     Balearic Islands – Spain
   </p>
 </blockquote>
+') %>
+</div>
