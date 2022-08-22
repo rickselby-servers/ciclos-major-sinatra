@@ -153,13 +153,13 @@ get '/auth/:provider/callback' do
   session[:user] = request.env['omniauth.auth']['info']['name']
   # request.env['omniauth.auth']['info']['email']
   # request.env['omniauth.auth']['uid']
-  redirect '/admin'
+  redirect '/'
 end
 
 if development?
   post '/auth/developer/callback' do
     session[:user] = request.env['omniauth.auth']['info']['name']
-    redirect '/admin'
+    redirect '/'
   end
 end
 
@@ -173,8 +173,6 @@ end
 before '/admin/?*' do
   halt 404 unless logged_in?
 end
-
-get('/admin') { erb :admin }
 
 post '/admin/text' do
   params.each { |k, v| DB[:text].insert_conflict(:replace).insert(key: k, text: v) }
