@@ -1,4 +1,8 @@
+<div class="tinymce-body" id="ride-groups.title">
+  <%== get_text('ride-groups.title', '
 <h1>Ride Groups</h1>
+') %>
+</div>
 
 <div id="ride-groups" class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
   <div class="col">
@@ -65,12 +69,13 @@
   </div>
 </div>
 
-
 <%== erb :_carousel, locals: { path: 'ride-groups', count: 2, alt: [
   '4 cyclists riding down a road',
   '4 cyclists sitting on a wall, with the sea in the background',
 ] } %>
 
+<div class="tinymce-body" id="ride-groups.body">
+<%== get_text('ride-groups.body', '
 <p>Depending on numbers we normally offer at least five riding groups to suit all aspirations and abilities. Our guides
   are fully equipped to manage your rides and will have routes ready to go and café stops planned.</p>
 
@@ -115,3 +120,5 @@
 
 <h2>Women Only Groups</h2>
 <p>If there is demand, we will offer or organise Women Only rides led by one of our guides.</p>
+') %>
+</div>
