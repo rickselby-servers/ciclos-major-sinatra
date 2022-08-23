@@ -13,7 +13,7 @@ module Helpers
       .sort
   end
 
-  def get_text(key, default)
+  def get_text(key, default = key)
     settings.text.fetch(key, default)
   end
 

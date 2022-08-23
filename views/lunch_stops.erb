@@ -1,8 +1,4 @@
-<div class="tinymce-body" id="lunch.title">
-  <%== get_text('lunch.title', '
-<h1>Lunch Stops</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'lunch.title' } %>
 
 <%== erb :_carousel, locals: { path: 'lunch-stops', count: 6, alt: [
   'Cyclists sitting at a long table in a cafe',
@@ -13,24 +9,4 @@
   'Two cyclists sitting at a table eating lunch',
 ] } %>
 
-<div class="tinymce-body" id="lunch.body">
-  <%== get_text('lunch.body', '
-<p>On most days the lunch stop for all groups apart from the Affogato Group is at the same location. This is designed to
-  create a focus point for the riders, to let riders change groups if they wish and to enable us all to spend some
-  social time together.</p>
-
-<p>If you find the ride you are on is just that little bit too fast for you, then the next day (or at the lunch stop)
-  simply drop down a group. If you do drop down a group for an easier ride, remember it is an easy day, don’t start
-  mixing it up at the front!</p>
-
-<p>The Cappuccino, Café Latte and Affogato groups will operate on a No Drop basis – the guide will endeavour to keep the
-  group together all day.</p>
-
-<p>The Espresso and Americano groups will generally have a No Drop policy, but as things sometimes get a little heated
-  in the last 20km, it’s advisable to be aware of your surroundings and make sure you know the way back into the resort
-  should you be slightly ‘distanced’. If you are feeling tired, then consider dropping down a group at the lunch
-  stop.</p>
-
-<p>All groups will wait for mechanicals and punctures.</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'lunch.body' } %>

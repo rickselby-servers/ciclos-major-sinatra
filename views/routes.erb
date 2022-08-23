@@ -1,8 +1,4 @@
-<div class="tinymce-body" id="routes.title">
-  <%== get_text('routes.title', '
-<h1>Our Routes</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'routes.title' } %>
 
 <%== erb :_carousel, locals: { path: 'routes', count: 4, alt: [
   'Picturesque views of the island',
@@ -11,42 +7,4 @@
   'Picturesque views of the island',
 ] } %>
 
-<div class="tinymce-body" id="routes.body">
-<%== get_text('routes.body', '
-<p>We pride ourselves on having the best selection of routes and rides on the island, and we have some great rides that
-  our guides keep ‘up their sleeve’ ready to entertain you! To whet your appetite however, here is a brief description
-  of some of the more well-known rides...</p>
-
-<h2>Valdemossa and Puig Major</h2>
-<p>The ride can be ridden clockwise or anti-clockwise from Alcudia. Clockwise we take a relatively easy route out to
-  Santa Maria, where we will stop briefly for a coffee and top up our bottles and bars for the hard work that is about
-  to come. On leaving Santa Maria we head north in the direction of Bunyola before heading east to pick up the 7km climb
-  to Valdemossa. After regrouping we descend into Deia for a well-earned lunch at the workman’s café, essential for the
-  next stage of the ride. After descending into Soller we then embark on the final third of this 150km ride. This
-  entails the climb to the tunnel by Puig Major, the highest point the public can ride on the island. After a brief stop
-  for photos and energy bars, it is all downhill you would think. Don’t be fooled, after a descent past the reservoirs
-  there are some tough undulating kilometres to negotiate via the monastery at Lluc before beginning the final descent
-  into Pollensa. Even then you will be pedalling those last few kilometres before regrouping for the wind-down back to
-  the hotel, knowing that you have completed an epic ride of approximately 150 km and 1,800 meters of climbing.</p>
-
-<h2>Sa Calobra</h2>
-<p>On paper a very simple ride out of 55km and turn around and ride back the way you came. But unless you are an expert
-  cartographer you will not appreciate the twists and turns of the road down to Sa Colobra until you see them. And your
-  legs will not thank you as you turn around to ascend the 650m you have just coasted down. Unless you have the features
-  of a whippet and your legs have muscles like Popeye’s biceps, this will take you the best part of an hour to get back
-  to the top. But the sense of achievement you will feel at the top is indescribable. This ride is guaranteed to make
-  even the most miserable of riders happy on the way home.</p>
-
-<h2>Randa and San Salvador</h2>
-<p>Two rides of a similar nature, a relatively round trip of at least 120 km (depending on group) with a tough climb of
-  about 5km up to a height of 500m, where you will be rewarded with magnificent views of the island whilst enjoying your
-  lunch.</p>
-
-<h2>Orient and Bunyola</h2>
-<p>A ride of two halves, starting with an undulating ride through the villages of Campanet, Selva and Llosetta before we
-  reach the outskirts of Alaro to begin the 18 km phase to the lunch stop in Bunyola. This will offer you two climbs and
-  afford you magnificent views. Once past the village of Orient these switchbacks will sap your legs on the way up and
-  test your descending skills on the way down to Bunyola. After lunch a relatively easy ride, albeit of 50 km back to
-  the hotel.</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'routes.body' } %>
