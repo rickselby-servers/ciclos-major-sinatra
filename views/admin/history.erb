@@ -1,15 +1,10 @@
 <h1>
-  <% if params[:key] %>
-    <a href="/admin/history">Site History</a> - <%= params[:key] %>
-  <% else %>
-    Site History
-  <% end %>
+  <a href="/admin/history">Site History</a> - <%= params[:key] %>
 </h1>
 
 <table class="table table-striped">
   <thead>
   <tr>
-    <th>Key</th>
     <th>Date</th>
     <th>Person</th>
     <th>Content</th>
@@ -18,11 +13,6 @@
   <tbody>
   <% @history.each do |row| %>
   <tr>
-    <td class="<%= row[:current] ? 'fw-bold' : '' %>">
-      <a href="/admin/history/<%= row[:key] %>">
-        <%= row[:key] %>
-      </a>
-    </td>
     <td><%= row[:datetime] %></td>
     <td><%= row[:person] %></td>
     <td><%== row[:text] %></td>
