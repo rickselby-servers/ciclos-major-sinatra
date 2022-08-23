@@ -9,7 +9,7 @@ Bundler.require
 require_relative 'helpers'
 
 configure do
-  Sequel.extension :migration
+  Sequel.extension :core_extensions, :migration
 
   set :erb, escape_html: true
   set :show_exceptions, :after_handler if development?
@@ -178,4 +178,11 @@ post '/admin/text' do
   end
   settings.set :text, nil
   redirect back
+end
+
+get '/admin/history/?:key?' do
+  query = DB[:text_history].order(:datetime.desc)
+  query = query.where(key: params[:key]) if params[:key]
+  @history = query.all
+  erb :'admin/history'
 end
