@@ -11,6 +11,7 @@
   <tr>
     <th>Key</th>
     <th>Date</th>
+    <th>Person</th>
     <th>Content</th>
   </tr>
   </thead>
@@ -23,6 +24,7 @@
       </a>
     </td>
     <td><%= row[:datetime] %></td>
+    <td><%= row[:person] %></td>
     <td><%== row[:text] %></td>
   </tr>
   <% end %>

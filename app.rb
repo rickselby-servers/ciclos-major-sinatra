@@ -173,7 +173,7 @@ post '/admin/text' do
   params.each do |k, v|
     DB.transaction do
       DB[:text_history].where(key: k).update(current: false)
-      DB[:text_history].insert(key: k, text: v)
+      DB[:text_history].insert(key: k, text: v, person: session[:user])
     end
   end
   settings.set :text, nil
