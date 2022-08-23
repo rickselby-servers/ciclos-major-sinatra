@@ -9,7 +9,7 @@ Sequel.migration do
       TrueClass :current, null: false, default: true
     end
 
-    from(:text_history).insert([:key, :text], from(:text).select(:key, :text))
+    from(:text_history).insert(%i[key text], from(:text).select(:key, :text))
   end
 
   down do
