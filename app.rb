@@ -8,14 +8,9 @@ Bundler.require
 
 require_relative 'helpers'
 
-def create_db
-  DB.create_table :text do
-    String :key, primary_key: true, null: false
-    String :text, text: true
-  end
-end
-
 configure do
+  Sequel.extension :migration
+
   set :erb, escape_html: true
   set :show_exceptions, :after_handler if development?
   disable :dump_errors unless development?
@@ -39,7 +34,7 @@ configure do
     end
   end
 
-  create_db unless DB.table_exists? :text
+  Sequel::Migrator.run DB, 'migrations'
   set :text, nil
 end
 
