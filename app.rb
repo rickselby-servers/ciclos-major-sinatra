@@ -180,9 +180,12 @@ post '/admin/text' do
   redirect back
 end
 
-get '/admin/history/?:key?' do
-  query = DB[:text_history].order(:datetime.desc)
-  query = query.where(key: params[:key]) if params[:key]
-  @history = query.all
+get '/admin/history' do
+  @keys = DB[:text_history].distinct.order(:key).select_map(:key)
+  erb :'admin/keys'
+end
+
+get '/admin/history/:key' do
+  @history = DB[:text_history].where(key: params[:key]).order(:datetime.desc).all
   erb :'admin/history'
 end
