@@ -170,7 +170,12 @@ before '/admin/?*' do
 end
 
 post '/admin/text' do
-  params.each { |k, v| DB[:text].insert_conflict(:replace).insert(key: k, text: v) }
+  params.each do |k, v|
+    DB.transaction do
+      DB[:text_history].where(key: k).update(current: false)
+      DB[:text_history].insert(key: k, text: v)
+    end
+  end
   settings.set :text, nil
   redirect back
 end

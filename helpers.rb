@@ -3,7 +3,7 @@
 # Helper functions for sinatra
 module Helpers
   def all_text
-    DB[:text].all.to_h { |v| [v[:key], v[:text]] }
+    DB[:text_history].where(current: true).all.to_h { |v| [v[:key], v[:text]] }
   end
 
   def gallery_images
