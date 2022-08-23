@@ -8,14 +8,9 @@ Bundler.require
 
 require_relative 'helpers'
 
-def create_db
-  DB.create_table :text do
-    String :key, primary_key: true, null: false
-    String :text, text: true
-  end
-end
-
 configure do
+  Sequel.extension :core_extensions, :migration
+
   set :erb, escape_html: true
   set :show_exceptions, :after_handler if development?
   disable :dump_errors unless development?
@@ -39,7 +34,7 @@ configure do
     end
   end
 
-  create_db unless DB.table_exists? :text
+  Sequel::Migrator.run DB, 'migrations'
   set :text, nil
 end
 
@@ -175,7 +170,24 @@ before '/admin/?*' do
 end
 
 post '/admin/text' do
-  params.each { |k, v| DB[:text].insert_conflict(:replace).insert(key: k, text: v) }
+  params.each do |k, v|
+    DB.transaction do
+      if DB[:text_history].where(key: k, current: true, text: v).empty?
+        DB[:text_history].where(key: k).update(current: false)
+        DB[:text_history].insert(key: k, text: v, person: session[:user])
+      end
+    end
+  end
   settings.set :text, nil
   redirect back
+end
+
+get '/admin/history' do
+  @keys = DB[:text_history].distinct.order(:key).select_map(:key)
+  erb :'admin/keys'
+end
+
+get '/admin/history/:key' do
+  @history = DB[:text_history].where(key: params[:key]).order(:datetime.desc).all
+  erb :'admin/history'
 end
