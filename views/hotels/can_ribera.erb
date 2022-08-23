@@ -1,8 +1,4 @@
-<div class="tinymce-body" id="hotels.can-ribera.header">
-  <%== get_text('hotels.can-ribera.header', '
-<h1>Can Ribera Rural Hotel by Zafiro – Muro</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'hotels.can-ribera.header' } %>
 
 <%== erb :_carousel, locals: { path: 'can-ribera', count: 9, alt: [
   'The main hotel door with a sign reading \'Can Ribera\'',
@@ -16,30 +12,4 @@
   'A top-down view of the outdoor restaurant',
 ] } %>
 
-<div class="tinymce-body" id="hotels.can-ribera.body">
-<%== get_text('hotels.can-ribera.body', '
-<p>The Can Ribera Rural Hotel by Zafiro is a four-star hotel located in Muro.</p>
-
-<p>A fully renovated and elegantly designed nineteenth century building located in Muro, a small town in the centre of
-  the island but only 18 km from Alcudia. From the magnificent terrace and swimming pool guests can enjoy wonderful
-  views of the Sierra de Tramuntana, the north coast of Mallorca, and all the surrounding villages.</p>
-
-<p>The majestic Can Ribera mansion is located in the historic centre of Muro. It dates back to 1870 and once belonged to
-  the local musician Miquel Tortell. Nowadays, it has been fully restored and converted into a Rural Hotel, remaining
-  true to the traditions of typical Mallorquin architecture.</p>
-
-<p>With an intimate and welcoming ambience, the hotel provides the ideal comforts and facilities to ensure peaceful
-  relaxation. It provides 21 rooms designed to guarantee the comfort of our guests. An interior courtyard where the
-  typical well of old Majorcan houses has been preserved. The pool on the terrace is the ideal place for enjoying a
-  comforting swim and a privileged panoramic view of the surroundings after a day of cycling in the warm Mallorquin
-  sunshine.</p>
-
-<blockquote class="blockquote">
-  <p>
-    C/ Comtat 1, 07440 Muro (Illes Balears)
-    <br>
-    Balearic Islands – Spain
-  </p>
-</blockquote>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'hotels.can-ribera.body' } %>

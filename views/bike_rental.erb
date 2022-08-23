@@ -1,21 +1,6 @@
-<div class="tinymce-body" id="bike-rental.title">
-  <%== get_text('bike-rental.title', '
-<h1>Bike Rental in Mallorca</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'bike-rental.title' } %>
 
-<div class="tinymce-body" id="bike-rental.body">
-  <%== get_text('bike-rental.body', '
-<p>We are pleased to be able to offer a range of hire bikes that are being hired out by Bikefriends Schon GmbH who are
-  based in the Zafiro Palace Hotel in Alcudia. If you are joining us on one of our cycling holidays in the Spring or
-  Autumn, you can hire a high-quality ROSE bike at the bike station at the Zafiro Palace Hotel. Thanks to Bikefriends
-  Schon’s cooperation with one of the leading bike manufacturers, they
-  have the latest and highest quality bikes on offer for you at favourable rates.</p>
-
-<p>They will take care to ensure that you have a bike that is the right size and will advise on saddles etc. Their
-  friendly mechanics in their own workshop ensure that chains. rims, spokes etc. are always in the best condition.</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'bike-rental.body' } %>
 
 <div class="alert alert-info">
   <span class="fa-solid fa-fw fa-info-circle"></span>

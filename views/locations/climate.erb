@@ -1,30 +1,4 @@
-<div class="tinymce-body" id="locations.climate.body">
-<%== get_text('locations.climate.body', '
-<h1>Climate</h1>
-
-<p>Mallorca benefits from hot dry summers and mild winters. The mountains to the north and east can influence the
-  weather depending on location and we always consider that when deciding on rides, particularly if we are heading into
-  the mountains. Prevailing winds are from the northwest. Whilst it rains, it doesn’t rain as much as in Northern Europe
-  and because of the warmth, the roads dry out much faster.</p>
-
-<h2>February/March</h2>
-<p>Temperatures in February are on the rise, generally reach 15 degrees centigrade with up to seven hours of sunshine.
-  Rain should be on the wane however If you want to head to the water, we recommend only using the heated hotel
-  pool.</p>
-
-<h2>April</h2>
-<p>By April, temperatures are easily hitting 20 degrees centigrade and the chances of rain decrease significantly.
-  Unfortunately, the sea is still not that warm now, but the outside pool will offer a pleasant alternative.</p>
-
-<h2>September/October</h2>
-<p>In September/October, temperatures are falling back to the low twenties making cycling during the day more
-  accommodating. Following the high summer temperatures, the sea is much warmer and swimming in the sea is very
-  pleasant.</p>
-
-<h2>Climate Data</h2>
-<p>The table below shows climate data for San Joan airport, Palma for the period 1981 to 2010. (Source: Agencia Estatal
-  de Meteorología, Spanish State Meteorological Agency)</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'locations.climate.title' } %>
+<%== erb :_tinymce, locals: { id: 'locations.climate.body' } %>
 
 <img src="/img/climate/temperatures.png" alt="A list of months and average temperature data for Mallorca">

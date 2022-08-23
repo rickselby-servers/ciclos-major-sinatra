@@ -1,8 +1,4 @@
-<div class="tinymce-body" id="hotels.palace.header">
-  <%== get_text('hotels.palace.header', '
-<h1>Zafiro Palace Hotel – Alcudia</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'hotels.palace.header' } %>
 
 <%== erb :_carousel, locals: { path: 'zafiro-palace', count: 3, alt: [
   'The view from the outdoor seating at the buffet resteraunt',
@@ -10,30 +6,4 @@
   'The hotel grounds lit up at night',
 ] } %>
 
-<div class="tinymce-body" id="hotels.palace.body">
-  <%== get_text('hotels.palace.body', '
-<p>The Zafiro Palace Hotel is a five-star hotel located in Puerto de Alcudia. This brand-new facility built in 2015
-  offers all the luxury of the Zafiro Tropic and more, plus it has the benefits of a heated 26.14m swimming pool, making
-  it ideal for triathletes preparing for the season, and for those cyclists looking to mix their training. A large fully
-  equipped gym and exercise area add to the sporting benefits of this luxurious base. Guests have free access to the
-  fitness centre. Free Wi-Fi is offered throughout the property.</p>
-
-<p>All rooms are air-conditioned and have a minibar, television, microwave, coffee machine, kettle and a balcony.
-  Bathrooms contain a bath, shower and hairdryer.</p>
-
-<p>The hotel offers a buffet restaurant, three themed restaurants and a few bars.</p>
-
-<p>Clients will have access to a bike storage area for the exclusive use of Ciclos Major. There is a bike shop and a
-  staffed workshop contained within the hotel complex.</p>
-
-<blockquote class="blockquote">
-  <p>
-    Zafiro Palace
-    <br>
-    C/ Camí Real al Moll 2, 07400 Puerto de Alcudia
-    <br>
-    Mallorca
-  </p>
-</blockquote>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'hotels.palace.body' } %>

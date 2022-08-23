@@ -1,23 +1,6 @@
-<div class="tinymce-body" id="arrivals.title">
-<%== get_text('arrivals.title', '
-<h1>Arrivals and Transfers</h1>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'arrivals.title' } %>
 
-<div class="tinymce-body" id="arrivals.body">
-  <%== get_text('arrivals.body', '
-<p>
-  From the minute you exit the arrivals hall at Palma airport you can relax, we will take care of everything from then
-  on. We, or our representatives, will meet you and transfer you to your hotel. Standard Saturday transfers are included
-  in the price. Individual or non-standard transfers will be priced upon application.
-</p>
-
-<p>
-  Transfers between Palma Mallorca Airport and your hotel are made by an experienced company accustomed to transferring
-  our clients and their bikes.
-</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'arrivals.body' } %>
 
 <p class="text-center">
   <img class="img-fluid" src="/img/arrivals/trailer.jpg" alt="A large 9 seater minivan with a large trailer for carrying bikes">

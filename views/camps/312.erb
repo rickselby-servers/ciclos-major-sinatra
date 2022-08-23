@@ -2,48 +2,13 @@
   <img src="/img/312/logo.png" alt="Mallorca 312 Logo">
 </p>
 
-<div class="tinymce-body" id="camps.312.header">
-  <%== get_text('camps.312.header', '
-<h1>Majorca 312km, 225km & 167km closed roads sportive</h1>
-<h2>29th April 2023</h2>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'camps.312.header' } %>
+
 <p class="text-center">
   <img class="img-fluid" src="/img/312/header.jpg" alt="Cyclists riding along a road in Majorca, with the coastline and the sea in the background">
 </p>
 
-<div class="tinymce-body" id="camps.312.body">
-<%== get_text('camps.312.body', '
-<h2>Ciclos Major are pleased to be able to offer you the chance to ride the Mallorca 312 in 2023.</h2>
-
-<p>Mallorca 312 is a cycling festival for keen amateur cyclists with a choice of 3 distances: 312km, 225km and 167km.
-  Your registration allows you to participate in all routes. Depending on how your training progresses, you can decide
-  on the day of the race which route you will ride.</p>
-
-<p>The registration, start and finish are in Playa de Muro located at just 5 or 6 kms from our hotels in Alcudia.</p>
-
-<h2>Our travel package for the 2023 Mallorca 312 includes:</h2>
-
-<ul>
-  <li>Event entry to 3 different distances 167km, 225km & 312km</li>
-  <li>Registration packs and jerseys are collected for you.</li>
-  <li>Minimum 4 nights half board accommodation at either the excellent Zafiro 4* Tropic or 5* Palace hotels in Alcudia,
-    additional days are available
-  </li>
-  <li>Direct private return airport transfers</li>
-  <li>Daily guided group rides before and after the event</li>
-  <li>Bike mechanic support</li>
-  <li>Early breakfast 5am on the day of event</li>
-  <li>Bike hire available from our partner bike hire company Bike Friends Schon based in the Palace Hotel.</li>
-  <li>Discount for non-cycling partners or cycling partners not participating in the event.</li>
-  <li>Refunds or rebooking in event of COVID related disruption</li>
-</ul>
-
-<h2>THE 312 SPORTIVE 2023 WILL SELL OUT QUICKLY</h2>
-
-<p>Prices for stays of 4, 5, 6 and 7 days in both hotels, for both 312 and non-participants are below.</p>
-') %>
-</div>
+<%== erb :_tinymce, locals: { id: 'camps.312.body' } %>
 
 <p>
   <a href="https://form.jotform.com/221393191925357" class="btn btn-primary">
