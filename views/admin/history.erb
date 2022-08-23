@@ -1,0 +1,22 @@
+<h1>
+  <a href="/admin/history">Site History</a> - <%= params[:key] %>
+</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Person</th>
+    <th>Content</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @history.each do |row| %>
+  <tr>
+    <td><%= row[:datetime] %></td>
+    <td><%= row[:person] %></td>
+    <td><%== row[:text] %></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>

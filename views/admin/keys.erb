@@ -1,0 +1,22 @@
+<h1>
+  Site History
+</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Key</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @keys.each do |key| %>
+    <tr>
+      <td>
+        <a href="/admin/history/<%= key %>">
+          <%= key %>
+        </a>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
