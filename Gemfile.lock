@@ -94,7 +94,7 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     securerandom (0.2.0)
-    sequel (5.59.0)
+    sequel (5.60.1)
     sinatra (2.2.2)
       mustermann (~> 2.0)
       rack (~> 2.2)
