@@ -100,7 +100,7 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.2.2)
       tilt (~> 2.0)
-    sqlite3 (1.4.4)
+    sqlite3 (1.5.0-x86_64-linux)
     thor (1.2.1)
     tilt (2.0.11)
     unicode-display_width (2.2.0)
