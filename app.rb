@@ -21,7 +21,7 @@ configure do
   helpers Helpers
 
   enable :sessions
-  set :session_secret, development? ? 'foo' : ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
+  set :secret, development? ? 'foo' : ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
   use OmniAuth::Builder do
     if development?
       provider :developer, fields: [:name], uid_field: :name
