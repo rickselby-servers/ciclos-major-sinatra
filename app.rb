@@ -8,6 +8,8 @@ Bundler.require
 
 require_relative 'helpers'
 
+DEV_SECRET = '0fe07dcd4c857ba8dcb8f060c1e8ebf65694fea2a1371b6e5e4b49534725df2f'
+
 configure do
   Sequel.extension :core_extensions, :migration
 
@@ -21,7 +23,7 @@ configure do
   helpers Helpers
 
   enable :sessions
-  set :secret, development? ? 'foo' : ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
+  set :session_secret, development? ? DEV_SECRET : ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
   use OmniAuth::Builder do
     if development?
       provider :developer, fields: [:name], uid_field: :name
