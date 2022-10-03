@@ -18,6 +18,16 @@ services:
     volumes:
       - ciclos-major-sinatra-db:/database
 
+  redirect:
+    container_name: ciclosmajor-redirect
+    image: morbz/docker-web-redirect
+    restart: always
+    environment:
+      VIRTUAL_HOST: ciclosmajor.com
+      LETSENCRYPT_HOST: ciclosmajor.com
+      LETSENCRYPT_EMAIL:
+      REDIRECT_TARGET: www.ciclosmajor.com
+
 volumes:
   ciclos-major-sinatra-db:
 
