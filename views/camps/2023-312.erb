@@ -1,4 +1,11 @@
-<h1>Mallorca 312 Sportive</h1>
+<h1>
+  Mallorca 312 Sportive
+  <% if SOLD_OUT_312 %>
+  <span class="badge bg-danger">
+    Sold out!
+  </span>
+  <% end %>
+</h1>
 <h2>29th April 2023</h2>
 
 <div class="row mb-3">
@@ -111,9 +118,15 @@
       </tbody>
     </table>
     <div class="text-center">
-      <a href="https://form.jotform.com/221393191925357" class="btn btn-primary">
-        Book Now
-      </a>
+      <% if SOLD_OUT_312 %>
+        <button class="btn btn-primary" disabled>
+          Sold out!
+        </button>
+      <% else %>
+        <a href="https://form.jotform.com/221393191925357" class="btn btn-primary">
+          Book Now
+        </a>
+      <% end %>
     </div>
   </div>
 </div>
@@ -180,9 +193,15 @@
       </tbody>
     </table>
     <div class="text-center">
-      <a href="https://form.jotform.com/221393191925357" class="btn btn-primary">
-        Book Now
-      </a>
+      <% if SOLD_OUT_312 %>
+        <button class="btn btn-primary" disabled>
+          Sold out!
+        </button>
+      <% else %>
+        <a href="https://form.jotform.com/221393191925357" class="btn btn-primary">
+          Book Now
+        </a>
+      <% end %>
     </div>
   </div>
 </div>
