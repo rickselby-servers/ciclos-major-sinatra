@@ -20,6 +20,9 @@ task :up do
   system 'rerun --background --no-notify -- ruby app.rb -p 8080'
 end
 
+desc 'Get project ready for dev work'
+task init: [:'npm:install', :webpack]
+
 desc 'Build and run production image'
 task :prod do
   Rake::Task['npm:install'].invoke
