@@ -54,7 +54,13 @@
 
   <div class="col">
     <div class="card h-100">
-      <img src="/img/booking-links/2023-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
+      <div class="position-relative d-inline-block">
+        <img src="/img/booking-links/2023-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
+        <% if SOLD_OUT_312 %>
+          <div class="position-absolute top-50 start-50 w-100 alert alert-danger"
+               style="transform: translate(-50%, -50%) rotate(-5deg); transform-origin: center">Sold out!</div>
+        <% end %>
+      </div>
       <div class="card-body">
         <h5 class="card-title">312 Sportive</h5>
         <p class="card-text">29th April 2023</p>
