@@ -21,7 +21,7 @@ task :up do
 end
 
 desc 'Get project ready for dev work'
-task init: [:'npm:install', :webpack]
+task init: %i[npm:install webpack]
 
 desc 'Build and run production image'
 task :prod do
