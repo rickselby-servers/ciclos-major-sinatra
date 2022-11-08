@@ -45,6 +45,10 @@ error 404 do
   erb :'404'
 end
 
+error 410 do
+  erb :'410'
+end
+
 error do
   error = env['sinatra.error']
   LOGGER.error "#{error.class} - #{error.message}"
@@ -78,7 +82,7 @@ get('/camps/312') { erb :'camps/312' }
 get('/camps/bespoke') { erb :'camps/bespoke' }
 get('/camps/cycling-and-triathlon') { erb :'camps/cycling_and_triathlon' }
 # Camps booking pages
-get('/camps/2022-autumn') { erb :'camps/2022-aut' }
+get('/camps/2022-autumn') { halt 410 }
 get('/camps/2023-spring') { erb :'camps/2023-spr' }
 get('/camps/2023-autumn') { erb :'camps/2023-aut' }
 get('/camps/2023-312') { erb :'camps/2023-312' }
