@@ -23,18 +23,6 @@ module Helpers
 
   def price_list(prices, days)
     list = []
-    total = 0
-    price = 0
-    (1..days).each do |day|
-      price = prices[day] if prices.key? day
-      total += price
-      list.push({ day: day, price: price.to_f, total: total.to_f })
-    end
-    list
-  end
-
-  def price_list_per_day(prices, days)
-    list = []
     price = 0
     (1..days).each do |day|
       price = prices[day] if prices.key? day
