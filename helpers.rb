@@ -32,4 +32,14 @@ module Helpers
     end
     list
   end
+
+  def price_list_per_day(prices, days)
+    list = []
+    price = 0
+    (1..days).each do |day|
+      price = prices[day] if prices.key? day
+      list.push({ day: day, price: price.to_f, total: (price * day).to_f })
+    end
+    list
+  end
 end
