@@ -91,7 +91,7 @@ GEM
       rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
-    securerandom (0.2.0)
+    securerandom (0.2.1)
     sequel (5.63.0)
     sinatra (3.0.4)
       mustermann (~> 3.0)
