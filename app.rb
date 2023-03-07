@@ -18,7 +18,8 @@ configure do
   set :show_exceptions, :after_handler if development?
   disable :dump_errors unless development?
   ASSETS = JSON.parse(File.read('public/manifest.json'), symbolize_names: true)
-  DB = Sequel.sqlite("#{production? ? '/database/' : ''}text.db")
+  # DB = Sequel.sqlite("#{production? ? '/database/' : ''}text.db")
+  DB = Sequel.postgres(host: 'localhost', database: 'postgres', user: 'postgres', password: '')
   LOGGER = Logger.new $stdout
   $stdout.sync = true
   helpers Helpers

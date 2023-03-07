@@ -24,8 +24,10 @@ end
 gem 'erubi'
 gem 'omniauth'
 gem 'omniauth-microsoft_graph'
+gem 'pg'
 gem 'rack'
 gem 'securerandom'
 gem 'sequel'
+gem 'sequel_pg', require: false
 gem 'sinatra'
 gem 'sqlite3'
