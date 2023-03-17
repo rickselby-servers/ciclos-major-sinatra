@@ -86,7 +86,6 @@ get('/camps/2022-autumn') { halt 410 }
 get('/camps/2023-spring') { erb :'camps/2023-spr' }
 get('/camps/2023-autumn') { erb :'camps/2023-aut' }
 get('/camps/2023-312') { erb :'camps/2023-312' }
-get('/camps/2023-312-training') { erb :'camps/2023-312-training' }
 # Hotels
 get('/hotels/can-ribera') { erb :'hotels/can_ribera' }
 get('/hotels/zafiro-palace') { erb :'hotels/zafiro_palace' }
