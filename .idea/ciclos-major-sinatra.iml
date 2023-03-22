@@ -31,8 +31,8 @@
     <orderEntry type="library" scope="PROVIDED" name="omniauth-microsoft_graph (v1.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.8.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.22.1, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="parser (v3.2.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.6.3, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v3.2.1.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.6.4, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-protection (v3.0.5, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.0.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -47,12 +47,12 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.12.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.12.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.12.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.47.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.48.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.27.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-capybara (v2.17.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-capybara (v2.17.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.16.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rake (v0.6.0, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v2.18.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v2.19.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-sequel (v0.3.4, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, RVM: ruby-2.7.6) [gem]" level="application" />
