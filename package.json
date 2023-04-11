@@ -4,7 +4,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "mini-css-extract-plugin": "^2.7.5",
-    "sass": "^1.60.0",
+    "sass": "^1.61.0",
     "sass-loader": "^13.2.1",
     "trim-newlines": "^5.0.0",
     "webpack": "^5.76.3",
