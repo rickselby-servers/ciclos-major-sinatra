@@ -14,6 +14,7 @@ $accordion-button-active-color: shade-color($info, 10%);
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
 
 $secondary-link-color: $white;
 $secondary-link-hover-color: shift-color($secondary, $link-shade-percentage) !default;
