@@ -24,6 +24,7 @@ end
 gem 'erubi'
 gem 'omniauth'
 gem 'omniauth-microsoft_graph'
+gem 'puma'
 gem 'rack'
 gem 'securerandom'
 gem 'sequel'
