@@ -26,7 +26,7 @@ module Helpers
     price = 0
     (1..days).each do |day|
       price = prices[day] if prices.key? day
-      list.push({ day: day, price: price.to_f, total: (price * day).to_f })
+      list.push({ day:, price: price.to_f, total: (price * day).to_f })
     end
     list
   end
