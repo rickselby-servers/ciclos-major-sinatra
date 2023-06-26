@@ -141,6 +141,8 @@ get('/hotels-and-locations/mallorca/?') { redirect '/locations/mallorca' }
 get('/hotels-and-locations/muro/?') { redirect '/locations/muro' }
 get('/hotels-and-locations/zafiro-palace/?') { redirect '/hotels/zafiro-palace' }
 get('/hotels-and-locations/zafiro-tropic/?') { redirect '/hotels/zafiro-tropic' }
+get('/other-information/privacy-policy/?') { redirect '/privacy-policy' }
+get('/other-information/tcs/?') { redirect '/terms-and-conditions' }
 get('/riding-groups-and-routes/?') { redirect '/' }
 get('/riding-groups-and-routes/lunch-stops/?') { redirect '/lunch-stops' }
 get('/riding-groups-and-routes/our-routes/?') { redirect '/routes' }
