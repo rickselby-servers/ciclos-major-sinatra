@@ -9,7 +9,8 @@ Bundler.require
 require_relative 'helpers'
 
 DEV_SECRET = '0fe07dcd4c857ba8dcb8f060c1e8ebf65694fea2a1371b6e5e4b49534725df2f'
-SOLD_OUT_312 = true
+SOLD_OUT_312 = false
+REGISTER_INTEREST_312 = true
 
 configure do
   Sequel.extension :core_extensions, :migration
@@ -73,7 +74,6 @@ get('/privacy-policy') { erb :privacy_policy }
 get('/ride-groups') { erb :ride_groups }
 get('/routes') { erb :routes }
 get('/safety') { erb :safety }
-get('/support-crew') { erb :support_crew }
 get('/terms-and-conditions') { erb :terms_and_conditions }
 get('/testimonials') { erb :testimonials }
 
@@ -86,6 +86,9 @@ get('/camps/2022-autumn') { halt 410 }
 get('/camps/2023-spring') { erb :'camps/2023-spr' }
 get('/camps/2023-autumn') { erb :'camps/2023-aut' }
 get('/camps/2023-312') { erb :'camps/2023-312' }
+get('/camps/2024-spring') { erb :'camps/2024-spr' }
+get('/camps/2024-autumn') { erb :'camps/2024-aut' }
+get('/camps/2024-312') { erb :'camps/2024-312' }
 # Hotels
 get('/hotels/can-ribera') { erb :'hotels/can_ribera' }
 get('/hotels/zafiro-palace') { erb :'hotels/zafiro_palace' }

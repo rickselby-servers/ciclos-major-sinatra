@@ -6,22 +6,7 @@
   <%== get_text('index.block') %>
 </p>
 
-<div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
-  <div class="col">
-    <div class="card h-100">
-      <img src="/img/booking-links/2023-03.jpg" class="card-img-top img-fluid" alt="Cyclists gathered together" aria-hidden="true">
-      <div class="card-body">
-        <h5 class="card-title">Spring 2023</h5>
-        <p class="card-text">4th February - 23rd May</p>
-      </div>
-      <div class="card-footer">
-        <a href="/camps/2023-spring" class="btn btn-primary">
-          Book Now
-        </a>
-      </div>
-    </div>
-  </div>
-
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center mb-3">
   <div class="col">
     <div class="card h-100">
       <img src="/img/booking-links/2023-09.jpg" class="card-img-top img-fluid" alt="Cyclists looking at a view of the sea" aria-hidden="true">
@@ -39,19 +24,55 @@
 
   <div class="col">
     <div class="card h-100">
+      <img src="/img/booking-links/2024-03.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
+      <div class="card-body">
+        <h5 class="card-title">Spring 2024</h5>
+        <p class="card-text">15th February - 13rd May</p>
+      </div>
+      <div class="card-footer">
+        <a href="/camps/2024-spring" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/booking-links/2024-09.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
+      <div class="card-body">
+        <h5 class="card-title">Autumn 2024</h5>
+        <p class="card-text">14th September - 3rd November</p>
+      </div>
+      <div class="card-footer">
+        <a href="/camps/2024-autumn" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
       <div class="position-relative d-inline-block">
-        <img src="/img/booking-links/2023-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
-        <% if SOLD_OUT_312 %>
+        <img src="/img/booking-links/2024-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
+        <% if SOLD_OUT_312 || REGISTER_INTEREST_312 %>
           <div class="position-absolute top-50 start-50 w-100 alert alert-danger"
-               style="transform: translate(-50%, -50%) rotate(-5deg); transform-origin: center">Sold out!</div>
+               style="transform: translate(-50%, -50%) rotate(-5deg); transform-origin: center">
+            <% if SOLD_OUT_312 %>
+              Sold out!
+            <% elsif REGISTER_INTEREST_312 %>
+              Register your Interest here
+            <% end %>
+          </div>
         <% end %>
       </div>
       <div class="card-body">
         <h5 class="card-title">312 Sportive</h5>
-        <p class="card-text">29th April 2023</p>
+        <p class="card-text">27th April 2024</p>
       </div>
       <div class="card-footer">
-        <a href="/camps/2023-312" class="btn btn-primary">
+        <a href="/camps/2024-312" class="btn btn-primary">
           Book Now
         </a>
       </div>
@@ -59,15 +80,15 @@
   </div>
 </div>
 
-<div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center mb-3">
   <div class="col">
     <a href="/bike-rental">
-    <div class="card h-100">
-      <img src="/img/index/bike-rental.jpg" class="card-img-top img-fluid" alt="Team GF Six Disc Di2 Carbon Wheel Bike" aria-hidden="true">
-      <div class="card-footer">
-        <button class="btn btn-primary">Bike Rental</button>
+      <div class="card h-100">
+        <img src="/img/index/bike-rental.jpg" class="card-img-top img-fluid" alt="Team GF Six Disc Di2 Carbon Wheel Bike" aria-hidden="true">
+        <div class="card-footer">
+          <button class="btn btn-primary">Bike Rental</button>
+        </div>
       </div>
-    </div>
     </a>
   </div>
 
@@ -88,6 +109,17 @@
         <img src="/img/index/prices-2023.jpg" class="card-img-top img-fluid" alt="4 cyclists riding down a road" aria-hidden="true">
         <div class="card-footer">
           <button class="btn btn-primary">2023 Prices</button>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col">
+    <a href="/prices/2024.pdf">
+      <div class="card h-100">
+        <img src="/img/index/prices-2024.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
+        <div class="card-footer">
+          <button class="btn btn-primary">2024 Prices</button>
         </div>
       </div>
     </a>
