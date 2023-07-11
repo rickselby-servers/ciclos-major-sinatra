@@ -74,7 +74,6 @@ get('/privacy-policy') { erb :privacy_policy }
 get('/ride-groups') { erb :ride_groups }
 get('/routes') { erb :routes }
 get('/safety') { erb :safety }
-get('/support-crew') { erb :support_crew }
 get('/terms-and-conditions') { erb :terms_and_conditions }
 get('/testimonials') { erb :testimonials }
 
