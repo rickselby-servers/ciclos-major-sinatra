@@ -7,14 +7,189 @@
   <% end %>
 </h1>
 
-<div class="alert alert-primary">
-  Mallorca 312 Sportive takes place on 27th April 2024
+<div class="row mb-3">
+  <div class="col camp-background-image" style="background-image: url(/img/camps/2024-312.jpg);"></div>
+  <div class="col-8">
+    <%== erb :_tinymce, locals: { id: '2024.312.info' } %>
+  </div>
 </div>
 
-<p>
-  Full details should be available by the end of July 2023.
-</p>
+<div class="row mb-3">
+  <div class="col camp-background-image" style="background-image: url(/img/camps/tropic.jpg);"></div>
+  <div class="col-8">
+    <h3>Zafiro Tropic 4* Hotel - Alcudia</h3>
+    <table class="table align-middle">
+      <thead>
+      <tr>
+        <th colspan="2"></th>
+        <th>4 days</th>
+        <th>5 days</th>
+        <th>6 days</th>
+        <th>7 days</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td rowspan="2">Studio</td>
+        <td>2 person share</td>
+        <td>£680.00</td>
+        <td>£780.00</td>
+        <td>£880.00</td>
+        <td>£980.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£820.00</td>
+        <td>£955.00</td>
+        <td>£1,090.00</td>
+        <td>£1,225.00</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Studio with garden view</td>
+        <td>2 person share</td>
+        <td>£700.00</td>
+        <td>£805.00</td>
+        <td>£910.00</td>
+        <td>£1,015.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£850.00</td>
+        <td>£990.00</td>
+        <td>£1,130.00</td>
+        <td>£1,275.00</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Apartment</td>
+        <td>2 person share</td>
+        <td>£705.00</td>
+        <td>£810.00</td>
+        <td>£915.00</td>
+        <td>£1,022.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£855.00</td>
+        <td>£995.00</td>
+        <td>£1,140.00</td>
+        <td>£1,280.00</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Apartment with pool view</td>
+        <td>2 person share</td>
+        <td>£735.00</td>
+        <td>£845.00</td>
+        <td>£960.00</td>
+        <td>£1,070.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£895.00</td>
+        <td>£1,045.00</td>
+        <td>£1,200.00</td>
+        <td>£1,350.00</td>
+      </tr>
+      <tr>
+        <td colspan="2">Royal Terrace Apartment</td>
+        <td>£880.00</td>
+        <td>£1,025.00</td>
+        <td>£1,175.00</td>
+        <td>£1,325.00</td>
+      </tr>
+      <tr>
+        <td colspan="2">Extra adult in apartment</td>
+        <td>£600.00</td>
+        <td>£675.00</td>
+        <td>£755.00</td>
+        <td>£835.00</td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="text-center">
+      <% if SOLD_OUT_312 %>
+        <button class="btn btn-primary" disabled>
+          Sold out!
+        </button>
+      <% else %>
+        <a href="https://form.jotform.com/232124134378350" class="btn btn-primary">
+          Book Now
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-<a href="https://form.jotform.com/231904522028348" class="btn btn-primary">
-  Register your interest now
-</a>
+<div class="row mb-3">
+  <div class="col camp-background-image" style="background-image: url(/img/camps/palace.jpg);"></div>
+  <div class="col-8">
+    <h3>Zafiro Palace 5* Hotel - Alcudia</h3>
+    <table class="table align-middle">
+      <thead>
+      <tr>
+        <th colspan="2"></th>
+        <th>4 days</th>
+        <th>5 days</th>
+        <th>6 days</th>
+        <th>7 days</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td rowspan="3">Junior Suite</td>
+        <td>2 person share</td>
+        <td>£815.00</td>
+        <td>£950.00</td>
+        <td>£1,085.00</td>
+        <td>£1,220.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£1,025.00</td>
+        <td>£1,210.00</td>
+        <td>£1,395.00</td>
+        <td>£1,585.00</td>
+      </tr>
+      <tr>
+        <td>Extra Adult</td>
+        <td>£715.00</td>
+        <td>£820.00</td>
+        <td>£930.00</td>
+        <td>£1,040.00</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Junior Suite Pool View</td>
+        <td>2 person share</td>
+        <td>£875.00</td>
+        <td>£1,020.00</td>
+        <td>£1,170.00</td>
+        <td>£1,315.00</td>
+      </tr>
+      <tr>
+        <td>Single</td>
+        <td>£1,105.00</td>
+        <td>£1,310.00</td>
+        <td>£1,515.00</td>
+        <td>£1,725.00</td>
+      </tr>
+      <tr>
+        <td>Extra Adult</td>
+        <td>£755.00</td>
+        <td>£870.00</td>
+        <td>£985.00</td>
+        <td>£1,105.00</td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="text-center">
+      <% if SOLD_OUT_312 %>
+        <button class="btn btn-primary" disabled>
+          Sold out!
+        </button>
+      <% else %>
+        <a href="https://form.jotform.com/232124134378350" class="btn btn-primary">
+          Book Now
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>
