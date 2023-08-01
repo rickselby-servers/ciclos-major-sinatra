@@ -186,13 +186,15 @@
           selector: '.tinymce-body',
           menubar: false,
           inline: true,
-          plugins: 'link lists',
-          toolbar: 'undo redo | styles bold italic | numlist bullist | link blockquote',
-          valid_elements: 'h?,p,br,strong,em,a[href],ul,li,blockquote[class]',
+          plugins: 'link lists table',
+          toolbar: 'undo redo | styles bold italic | numlist bullist | link blockquote table',
+          valid_elements: 'h?,p,br,strong,em,a[href],ul,li,blockquote[class],table[class],thead,tbody,tr,th,td',
           hidden_input: true,
           formats: {
               blockquote: { block: 'blockquote', classes: 'blockquote' }
           },
+          table_default_attributes: { class: 'table' },
+          table_default_styles: {}
       });
   </script>
 <% end %>
