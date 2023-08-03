@@ -10,7 +10,7 @@ require_relative 'helpers'
 
 DEV_SECRET = '0fe07dcd4c857ba8dcb8f060c1e8ebf65694fea2a1371b6e5e4b49534725df2f'
 SOLD_OUT_312 = false
-REGISTER_INTEREST_312 = true
+REGISTER_INTEREST_312 = false
 
 configure do
   Sequel.extension :core_extensions, :migration
