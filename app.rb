@@ -170,6 +170,11 @@ get '/auth/:provider/callback' do
   redirect '/'
 end
 
+get '/auth/failure' do
+  @message = params[:message]
+  halt 403, erb(:auth_failure)
+end
+
 if development?
   post '/auth/developer/callback' do
     session[:user] = request.env['omniauth.auth']['info']['name']
