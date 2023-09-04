@@ -3,6 +3,7 @@ GEM
   specs:
     ast (2.4.2)
     base64 (0.1.1)
+    bigdecimal (3.1.4)
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
@@ -107,7 +108,8 @@ GEM
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     securerandom (0.2.2)
-    sequel (5.71.0)
+    sequel (5.72.0)
+      bigdecimal
     sinatra (3.1.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
