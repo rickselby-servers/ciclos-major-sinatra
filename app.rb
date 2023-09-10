@@ -106,7 +106,7 @@ GALLERIES = [
   { slug: '2023-03', name: 'March 2023', cover: 'b97c5fd1-39d1-468c-b034-047caeb92b49.jpg' },
   { slug: '2023-02', name: 'February 2023', cover: '6f04d102-20fa-46e3-af49-d0c0f9dc98ce.jpg' },
   { slug: '2023-02-lee-valley', name: 'Lee Valley Week 2023', cover: '0583e50d-3a60-41ae-a29f-0bbeadad008d.jpg' },
-  { slug: '2022-09', name: 'Autumn 2022', cover: 'https://www.ciclosmajor.com/img/gallery/2022-09/eca14a66-19c4-49a7-947e-103c011a3261.jpg' },
+  { slug: '2022-09', name: 'Autumn 2022', cover: 'eca14a66-19c4-49a7-947e-103c011a3261.jpg' },
   { slug: '2022-04', name: 'April 2022', cover: '981c2c6c-b6a9-4280-8ddc-a627fd3a474d.jpg' },
   { slug: '2022-04-312', name: '312 April 2022', cover: '61af91b4-464e-4156-a13e-2b0fc1a5bf92.jpg' },
   { slug: '2022-03', name: 'March 2022', cover: '73749231-A772-4D7E-90ED-175637017F2E.jpg' },
