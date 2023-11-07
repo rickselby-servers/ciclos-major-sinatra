@@ -93,3 +93,8 @@ $secondary-link-hover-color: shift-color($secondary, $link-shade-percentage) !de
   padding-left: 0.05em;
   padding-right: 0.1em
 }
+
+.banner-rotated {
+  transform: translate(-50%, -50%) rotate(-5deg);
+  transform-origin: center
+}
