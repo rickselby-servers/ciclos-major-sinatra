@@ -79,13 +79,26 @@ namespace :webpack do
   end
 end
 
-desc 'Resize gallery images'
-task :resize, [:directory] do |_, args|
-  FileUtils.cd "public/img/gallery/#{args.directory}" do
-    sh 'pwd'
-    sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
-    sh 'mogrify -auto-orient *'
-    sh 'mogrify -resize 420x *'
-    sh 'git add *'
+namespace :resize do
+  desc 'Resize gallery images'
+  task :gallery, [:directory] do |_, args|
+    FileUtils.cd "public/img/gallery/#{args.directory}" do
+      sh 'pwd'
+      sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
+      sh 'mogrify -auto-orient *'
+      sh 'mogrify -resize 420x *'
+      sh 'git add *'
+    end
+  end
+
+  desc 'Resize carousel images'
+  task :carousel, [:directory] do |_, args|
+    FileUtils.cd "public/img/carousel/#{args.directory}" do
+      sh 'pwd'
+      sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
+      sh 'mogrify -auto-orient *'
+      sh 'mogrify -resize x400 *'
+      sh 'git add *'
+    end
   end
 end
