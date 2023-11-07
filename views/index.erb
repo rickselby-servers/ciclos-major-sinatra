@@ -6,22 +6,7 @@
   <%== get_text('index.block') %>
 </p>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center mb-3">
-  <div class="col">
-    <div class="card h-100">
-      <img src="/img/camps/2023-aut.jpg" class="card-img-top img-fluid" alt="Cyclists looking at a view of the sea" aria-hidden="true">
-      <div class="card-body">
-        <h5 class="card-title">Autumn 2023</h5>
-        <p class="card-text">23rd September - 29th October</p>
-      </div>
-      <div class="card-footer">
-        <a href="/camps/2023-autumn" class="btn btn-primary">
-          Book Now
-        </a>
-      </div>
-    </div>
-  </div>
-
+<div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
   <div class="col">
     <div class="card h-100">
       <img src="/img/camps/2024-spr.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
@@ -57,8 +42,7 @@
       <div class="position-relative d-inline-block">
         <img src="/img/camps/2024-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
         <% if SOLD_OUT_312 || REGISTER_INTEREST_312 %>
-          <div class="position-absolute top-50 start-50 w-100 alert alert-danger"
-               style="transform: translate(-50%, -50%) rotate(-5deg); transform-origin: center">
+          <div class="position-absolute top-50 start-50 w-100 alert alert-danger banner-rotated">
             <% if SOLD_OUT_312 %>
               Sold out!
             <% elsif REGISTER_INTEREST_312 %>
@@ -80,7 +64,7 @@
   </div>
 </div>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center mb-3">
+<div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
   <div class="col">
     <a href="/bike-rental">
       <div class="card h-100">
@@ -98,17 +82,6 @@
         <img src="/img/index/ride-groups.png" class="card-img-top img-fluid" alt="4 cyclists riding down a road" aria-hidden="true">
         <div class="card-footer">
           <button class="btn btn-primary">Ride Groups</button>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col">
-    <a href="/prices/2023.pdf">
-      <div class="card h-100">
-        <img src="/img/index/prices-2023.jpg" class="card-img-top img-fluid" alt="4 cyclists riding down a road" aria-hidden="true">
-        <div class="card-footer">
-          <button class="btn btn-primary">2023 Prices</button>
         </div>
       </div>
     </a>
