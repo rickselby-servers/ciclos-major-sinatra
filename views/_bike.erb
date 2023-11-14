@@ -1,0 +1,37 @@
+<% data = [data] unless data.is_a? Array %>
+<h2><%= name %></h2>
+<div class="row mb-3">
+  <div class="col-8">
+    <img class="img-fluid mb-3 mx-auto d-block" src="/img/bikes/<%= format_bike_file_name name %>.png" alt="<%= name %>">
+
+    <% if defined? blurb %>
+      <p><%= blurb %></p>
+    <% end %>
+
+    <% p data %>
+
+    <% data.each do |bike_data| %>
+      <% p bike_data %>
+      <% if bike_data[:title] %>
+        <h3><%= bike_data[:title] %></h3>
+        <% bike_data.delete :title %>
+      <% end %>
+
+      <div class="list-group bg-transparent mb-3">
+        <% bike_data.each do |name, value| %>
+          <div class="list-group-item bg-transparent">
+            <span class="fw-bold"><%= format_data_name name %>:</span> <%= value %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-4">
+    <%== erb :_rental_price_list, locals: { prices: prices } %>
+    <div class="d-grid gap-2">
+      <a href="https://form.jotform.com/232906110109344" class="btn btn-primary">
+        Book Now
+      </a>
+    </div>
+  </div>
+</div>
