@@ -12,12 +12,12 @@
   </tr>
   </thead>
   <tbody>
-  <% price_list(prices, days).each do |d| %>
-  <tr>
-    <td><%= d[:day] %></td>
-    <td>€<%= sprintf('%.2f', d[:price]) %></td>
-    <td>€<%= sprintf('%.2f', d[:total]) %></td>
-  </tr>
+  <% prices.each_with_index do |price, day| %>
+    <tr>
+      <td><%= day + 1 %></td>
+      <td>€<%= sprintf('%.2f', (price.to_f / (day + 1))) %></td>
+      <td>€<%= sprintf('%.2f', price) %></td>
+    </tr>
   <% end %>
   </tbody>
 </table>

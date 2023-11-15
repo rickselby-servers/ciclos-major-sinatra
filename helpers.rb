@@ -21,13 +21,11 @@ module Helpers
     session.key?(:user) && !session.fetch(:user).empty?
   end
 
-  def price_list(prices, days)
-    list = []
-    price = 0
-    (1..days).each do |day|
-      price = prices[day] if prices.key? day
-      list.push({ day:, price: price.to_f, total: (price * day).to_f })
-    end
-    list
+  def format_bike_file_name(name)
+    name.downcase.tr(' /+', '-').squeeze('-')
+  end
+
+  def format_data_name(name)
+    name.to_s.capitalize.tr('_', ' ')
   end
 end

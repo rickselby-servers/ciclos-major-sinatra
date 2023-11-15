@@ -13,6 +13,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="tinymce" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="base64 (v0.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v3.1.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.4.10, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.9.1, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -61,6 +62,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rspec (v2.25.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-sequel (v0.3.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.3.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sequel (v5.74.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v3.1.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="snaky_hash (v2.0.1, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -94,7 +96,14 @@
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Build and run production image" fullCommand="prod" id="prod" />
-          <RakeTaskImpl description="Resize gallery images" fullCommand="resize[directory]" id="resize[directory]" />
+          <RakeTaskImpl id="resize">
+            <subtasks>
+              <RakeTaskImpl description="Resize carousel images" fullCommand="resize:carousel[directory]" id="carousel[directory]" />
+              <RakeTaskImpl description="Resize gallery images" fullCommand="resize:gallery[directory]" id="gallery[directory]" />
+              <RakeTaskImpl description="" fullCommand="resize:carousel" id="carousel" />
+              <RakeTaskImpl description="" fullCommand="resize:gallery" id="gallery" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl description="Run RuboCop" fullCommand="rubocop" id="rubocop" />
           <RakeTaskImpl id="rubocop">
             <subtasks>
@@ -123,7 +132,6 @@
               </RakeTaskImpl>
             </subtasks>
           </RakeTaskImpl>
-          <RakeTaskImpl description="" fullCommand="resize" id="resize" />
         </subtasks>
       </RakeTaskImpl>
     </option>
