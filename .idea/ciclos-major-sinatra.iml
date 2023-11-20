@@ -29,7 +29,7 @@
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.8.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mustermann (v3.0.0, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.9, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.6.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth2 (v2.0.9, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v2.1.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-microsoft_graph (v1.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -100,6 +100,7 @@
             <subtasks>
               <RakeTaskImpl description="Resize carousel images" fullCommand="resize:carousel[directory]" id="carousel[directory]" />
               <RakeTaskImpl description="Resize gallery images" fullCommand="resize:gallery[directory]" id="gallery[directory]" />
+              <RakeTaskImpl description="Resize guide images" fullCommand="resize:guides" id="guides" />
               <RakeTaskImpl description="" fullCommand="resize:carousel" id="carousel" />
               <RakeTaskImpl description="" fullCommand="resize:gallery" id="gallery" />
             </subtasks>

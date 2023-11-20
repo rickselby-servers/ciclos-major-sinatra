@@ -99,4 +99,9 @@ namespace :resize do
   task :carousel, [:directory] do |_, args|
     resize_photos "public/img/carousel/#{args.directory}", 'x400'
   end
+
+  desc 'Resize guide images'
+  task :guides do
+    resize_photos 'public/img/guides', '200x'
+  end
 end
