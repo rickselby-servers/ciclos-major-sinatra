@@ -1,10 +1,21 @@
-<p class="text-center">
+<div class="text-center">
   <img src="/img/312/logo.png" alt="Mallorca 312 Logo">
-</p>
+  <% if SOLD_OUT_312 %>
+  <div class="position-absolute top-50 start-50 w-50 alert alert-danger banner-rotated">
+    Sold out!
+  </div>
+  <% end %>
+</div>
 
-<a href="https://form.jotform.com/232124134378350" class="btn btn-primary">
-  Book Now
-</a>
+<% if SOLD_OUT_312 %>
+  <button class="btn btn-primary" disabled>
+    Sold out!
+  </button>
+<% else %>
+  <a href="https://form.jotform.com/232124134378350" class="btn btn-primary">
+    Book Now
+  </a>
+<% end %>
 
 <p></p>
 
