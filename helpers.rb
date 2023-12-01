@@ -9,7 +9,7 @@ module Helpers
   def gallery_images
     Dir["./public/img/gallery/#{@gallery[:slug]}/*"]
       .select { |f| File.file?(f) }
-      .map { |p| p.delete_prefix './public' }
+      .map { |p| p.delete_prefix "./public" }
       .sort
   end
 
@@ -22,10 +22,10 @@ module Helpers
   end
 
   def format_bike_file_name(name)
-    name.downcase.tr(' /+', '-').squeeze('-')
+    name.downcase.tr(" /+", "-").squeeze("-")
   end
 
   def format_data_name(name)
-    name.to_s.capitalize.tr('_', ' ')
+    name.to_s.capitalize.tr("_", " ")
   end
 end

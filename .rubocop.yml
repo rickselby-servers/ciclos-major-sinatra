@@ -1,14 +1,8 @@
 ---
-require:
-  - rubocop-performance
-  - rubocop-rake
-  - rubocop-rspec
-  - rubocop-sequel
-
-# Show URLs for each cop
-AllCops:
-  DisplayStyleGuide: true
-  NewCops: enable
+inherit_gem:
+  rubocop-rickselby:
+    - config/default.yml
+    - config/rspec.yml
 
 # Disable block-length checks for rspec
 Metrics/BlockLength:
