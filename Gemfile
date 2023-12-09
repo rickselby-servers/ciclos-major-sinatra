@@ -14,7 +14,7 @@ end
 
 group :development do
   gem "bundler-audit", "~> 0.9"
-  gem "rubocop-rickselby", "~> 0.1"
+  gem "rubocop-rickselby", "~> 0.7"
 end
 
 gem "erubi", "~> 1.12"
