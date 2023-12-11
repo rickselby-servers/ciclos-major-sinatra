@@ -1,5 +1,5 @@
 ###############################################################################
-FROM ruby:3.2.2-alpine AS ruby-base
+FROM ruby:3.2.2-alpine3.18 AS ruby-base
 
 RUN apk --no-cache add imagemagick sqlite-dev
 RUN gem update bundler
