@@ -76,6 +76,7 @@ get("/routes") { erb :routes }
 get("/safety") { erb :safety }
 get("/terms-and-conditions") { erb :terms_and_conditions }
 get("/testimonials") { erb :testimonials }
+get("/videos") { erb :videos }
 
 # Camps
 get("/camps/312") { erb :"camps/312" }
