@@ -20,7 +20,7 @@ end
 
 gem "erubi", "~> 1.12"
 gem "omniauth", "~> 2.1"
-gem "omniauth-microsoft_graph", "~> 1.2"
+gem "omniauth-microsoft_graph", "~> 2.0"
 gem "puma", "~> 6.4"
 gem "rack", "~> 2.2"
 gem "securerandom", "~> 0.3"
