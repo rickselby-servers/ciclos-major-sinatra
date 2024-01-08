@@ -35,50 +35,50 @@ end
 namespace :npm do
   desc "Run npm ci"
   task :ci do
-    sh node_command "npm ci"
+    sh RakeHelpers.node_command "npm ci"
   end
 
   desc "Run npm install"
   task :install do
-    sh node_command "npm install"
+    sh RakeHelpers.node_command "npm install"
   end
 
   desc "Run npm update"
   task :update do
-    sh node_command "npm update"
+    sh RakeHelpers.node_command "npm update"
   end
 end
 
 desc "Run webpack for dev"
 task :webpack do
-  sh node_command "npx webpack --config webpack.dev.js"
+  sh RakeHelpers.node_command "npx webpack --config webpack.dev.js"
 end
 
 namespace :webpack do
   desc "Run webpack watch"
   task :watch do
-    sh node_command "npx webpack watch --config webpack.dev.js"
+    sh RakeHelpers.node_command "npx webpack watch --config webpack.dev.js"
   end
 
   desc "Run webpack production"
   task :prod do
-    sh node_command "npx webpack --config webpack.prod.js"
+    sh RakeHelpers.node_command "npx webpack --config webpack.prod.js"
   end
 end
 
 namespace :resize do
   desc "Resize gallery images"
   task :gallery, [:directory] do |_, args|
-    resize_photos "public/img/gallery/#{args.directory}", "420x"
+    RakeHelpers.resize_photos "public/img/gallery/#{args.directory}", "420x"
   end
 
   desc "Resize carousel images"
   task :carousel, [:directory] do |_, args|
-    resize_photos "public/img/carousel/#{args.directory}", "x400"
+    RakeHelpers.resize_photos "public/img/carousel/#{args.directory}", "x400"
   end
 
   desc "Resize guide images"
   task :guides do
-    resize_photos "public/img/guides", "200x"
+    RakeHelpers.resize_photos "public/img/guides", "200x"
   end
 end
