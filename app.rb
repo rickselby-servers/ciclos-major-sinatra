@@ -19,7 +19,7 @@ configure do
   set :show_exceptions, :after_handler if development?
   disable :dump_errors unless development?
   ASSETS = JSON.parse(File.read("public/manifest.json"), symbolize_names: true)
-  DB = Sequel.sqlite("#{production? ? '/database/' : ''}text.db")
+  DB = Sequel.sqlite("#{production? ? "/database/" : ""}text.db")
   LOGGER = Logger.new $stdout
   $stdout.sync = true
   helpers Helpers
@@ -28,12 +28,12 @@ configure do
   set :session_secret, development? ? DEV_SECRET : ENV.fetch("SESSION_SECRET") { SecureRandom.hex(64) }
   use OmniAuth::Builder do
     if development?
-      provider :developer, fields: [:name], uid_field: :name
+      provider :developer, fields: %i[name], uid_field: :name
     else
       provider :microsoft_graph, ENV.fetch("AD_CLIENT_ID", nil), ENV.fetch("AD_CLIENT_SECRET", nil), client_options: {
-        site: "https://login.microsoftonline.com/",
-        token_url: "#{ENV.fetch('AD_TENANT', nil)}/oauth2/v2.0/token",
-        authorize_url: "#{ENV.fetch('AD_TENANT', nil)}/oauth2/v2.0/authorize"
+        site:          "https://login.microsoftonline.com/",
+        token_url:     "#{ENV.fetch("AD_TENANT", nil)}/oauth2/v2.0/token",
+        authorize_url: "#{ENV.fetch("AD_TENANT", nil)}/oauth2/v2.0/authorize",
       }
     end
   end
@@ -121,7 +121,7 @@ GALLERIES = [
   { slug: "2020-02-evesham", name: "Evesham Wheelers - February 2020", cover: "3.jpg" },
   { slug: "2020-02-pro-cycle", name: "Pro Cycle Hire - February 2020", cover: "2.jpg" },
   { slug: "2019-06", name: "NEC Cycle Show 2019", cover: "GO Draw Crop.jpg" },
-  { slug: "2019-09", name: "De Ver Cycles - September 2019", cover: "DVCP 3.jpg" }
+  { slug: "2019-09", name: "De Ver Cycles - September 2019", cover: "DVCP 3.jpg" },
 ].freeze
 
 get("/gallery") { erb :gallery_index }
