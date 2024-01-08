@@ -2,6 +2,7 @@
 
 require "rubygems"
 require "bundler/setup"
+require_relative "lib/rake_helpers"
 
 Bundler.setup
 Bundler.require(:development, :test)
@@ -29,20 +30,6 @@ task :prod do
   Rake::Task["webpack:prod"].invoke
   sh "docker build -f docker/Dockerfile -t ciclos-major-prod ."
   sh "docker run -p 80:80 ciclos-major-prod"
-end
-
-def node_command(command, name: nil)
-  flags = [
-    "--rm",
-    "-i",
-    "-v #{Dir.pwd}:/app",
-    "-w /app",
-    "--env HOME=./.node",
-    "--user #{Process.uid}:#{Process.gid}"
-  ]
-  flags.push "--name #{name}" unless name.nil?
-
-  "docker run #{flags.join ' '} node:16-alpine #{command}"
 end
 
 namespace :npm do
@@ -76,16 +63,6 @@ namespace :webpack do
   desc "Run webpack production"
   task :prod do
     sh node_command "npx webpack --config webpack.prod.js"
-  end
-end
-
-def resize_photos(directory, size)
-  FileUtils.cd directory do
-    sh "pwd"
-    sh %(find . -name "*.JPG" -exec bash -c 'mv "$0" "${0%.JPG}.jpg"' {} \\;)
-    sh "mogrify -auto-orient *"
-    sh "mogrify -resize #{size} *"
-    sh "git add *"
   end
 end
 
