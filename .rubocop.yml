@@ -3,15 +3,7 @@ inherit_gem:
   rubocop-rickselby:
     - config/default.yml
     - config/rspec.yml
-
-# Disable block-length checks for rspec
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*.rb'
-
-# Don't enforce a module / class name as the first argument to the top-level describe
-RSpec/DescribeClass:
-  Enabled: false
+    - config/sequel.yml
 
 # Allow constant definitions in the 'configure' block
 Lint/ConstantDefinitionInBlock:
