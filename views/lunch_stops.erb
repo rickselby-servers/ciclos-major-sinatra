@@ -1,12 +1,16 @@
-<%== erb :_tinymce, locals: { id: 'lunch.title' } %>
+<%== erb :_tinymce, locals: { id: "lunch.title" } %>
 
-<%== erb :_carousel, locals: { path: 'lunch-stops', count: 6, alt: [
-  'Cyclists sitting around a table in a cafe',
-  'Cyclists sitting around a table in a cafe',
-  'Cyclists sitting around a small tables at a hotel',
-  'Cyclists sitting around a table in a cafe',
-  'Cyclists sitting at a long table in a cafe',
-  'Cyclists sitting in chairs, looking at the camera; one is holding a coffee',
-] } %>
+<%== erb :_carousel, locals: {
+       path:  "lunch-stops",
+       count: 6,
+       alt:   [
+         "Cyclists sitting around a table in a cafe",
+         "Cyclists sitting around a table in a cafe",
+         "Cyclists sitting around a small tables at a hotel",
+         "Cyclists sitting around a table in a cafe",
+         "Cyclists sitting at a long table in a cafe",
+         "Cyclists sitting in chairs, looking at the camera; one is holding a coffee",
+       ],
+     } %>
 
-<%== erb :_tinymce, locals: { id: 'lunch.body' } %>
+<%== erb :_tinymce, locals: { id: "lunch.body" } %>

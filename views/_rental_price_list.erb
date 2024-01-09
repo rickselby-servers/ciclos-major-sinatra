@@ -15,8 +15,8 @@
   <% prices.each_with_index do |price, day| %>
     <tr>
       <td><%= day + 1 %></td>
-      <td>€<%= sprintf('%.2f', (price.to_f / (day + 1))) %></td>
-      <td>€<%= sprintf('%.2f', price) %></td>
+      <td>€<%= format("%.2f", price.fdiv(day + 1)) %></td>
+      <td>€<%= format("%.2f", price) %></td>
     </tr>
   <% end %>
   </tbody>
