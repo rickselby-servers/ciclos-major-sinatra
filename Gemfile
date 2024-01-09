@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 group :test, :development do
+  gem "erb_lint", "~> 0.5", require: false
   gem "rack-test", "~> 2.1"
   gem "rake", "~> 13.1"
   gem "rerun", "~> 0.14"
