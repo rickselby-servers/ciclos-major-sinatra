@@ -204,7 +204,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler-audit (~> 0.9)
-  erb_lint (~> 0.5)
   erubi (~> 1.12)
   omniauth (~> 2.1)
   omniauth-microsoft_graph (~> 2.0)
