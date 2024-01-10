@@ -1,4 +1,4 @@
-<%== erb :_tinymce, locals: { id: 'ride-groups.title' } %>
+<%== erb :_tinymce, locals: { id: "ride-groups.title" } %>
 
 <div id="ride-groups" class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
   <div class="col">
@@ -65,11 +65,15 @@
   </div>
 </div>
 
-<%== erb :_carousel, locals: { path: 'ride-groups', count: 4, alt: [
-  '3 cyclists riding down a road',
-  '8 cyclists posing at the top of a climb, with a view of Majorca in the background',
-  '4 cyclists descending a hill',
-  '7 cyclists standing next to a tall wall',
-] } %>
+<%== erb :_carousel, locals: {
+       path:  "ride-groups",
+       count: 4,
+       alt:   [
+         "3 cyclists riding down a road",
+         "8 cyclists posing at the top of a climb, with a view of Majorca in the background",
+         "4 cyclists descending a hill",
+         "7 cyclists standing next to a tall wall",
+       ],
+     } %>
 
-<%== erb :_tinymce, locals: { id: 'ride-groups.body' } %>
+<%== erb :_tinymce, locals: { id: "ride-groups.body" } %>
