@@ -6,7 +6,7 @@ group :test, :development do
   gem "rack-test", "~> 2.1"
   gem "rake", "~> 13.2"
   gem "rerun", "~> 0.14"
-  gem "rubocop-rickselby", "~> 0.27", require: false
+  gem "rubocop-rickselby", "~> 0.28", require: false
 end
 
 group :test do
