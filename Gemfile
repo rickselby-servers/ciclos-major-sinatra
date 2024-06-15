@@ -17,7 +17,7 @@ group :development do
   gem "bundler-audit", "~> 0.9"
 end
 
-gem "erubi", "~> 1.12"
+gem "erubi", "~> 1.13"
 gem "omniauth", "~> 2.1"
 gem "omniauth-microsoft_graph", "~> 2.0"
 gem "puma", "~> 6.4"
