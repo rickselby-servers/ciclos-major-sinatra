@@ -8,10 +8,7 @@
       <p><%= blurb %></p>
     <% end %>
 
-    <% p data %>
-
     <% data.each do |bike_data| %>
-      <% p bike_data %>
       <% if bike_data[:title] %>
         <h3><%= bike_data[:title] %></h3>
         <% bike_data.delete :title %>
@@ -30,7 +27,11 @@
     <%== erb :_rental_price_list, locals: { prices: } %>
     <div class="d-grid gap-2">
       <a href="https://form.jotform.com/232906110109344" class="btn btn-primary">
-        Book Now
+        Book Now 2024
+      </a>
+
+      <a href="https://form.jotform.com/242604763949366" class="btn btn-primary">
+        Book Now 2025
       </a>
     </div>
   </div>
