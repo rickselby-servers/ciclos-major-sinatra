@@ -8,10 +8,7 @@
       <p><%= blurb %></p>
     <% end %>
 
-    <% p data %>
-
     <% data.each do |bike_data| %>
-      <% p bike_data %>
       <% if bike_data[:title] %>
         <h3><%= bike_data[:title] %></h3>
         <% bike_data.delete :title %>
