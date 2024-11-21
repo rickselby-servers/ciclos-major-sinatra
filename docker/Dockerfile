@@ -23,4 +23,4 @@ WORKDIR /app
 EXPOSE 80
 ENV APP_ENV production
 ENV RACK_ENV production
-CMD ["ruby", "app.rb", "-p 80"]
+CMD ["bundle", "exec", "ruby", "app.rb", "-p 80"]
