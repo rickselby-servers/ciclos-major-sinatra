@@ -201,7 +201,7 @@ GEM
       rubocop (~> 1.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    securerandom (0.3.2)
+    securerandom (0.4.0)
     sequel (5.87.0)
       bigdecimal
     sinatra (4.1.1)
@@ -263,7 +263,7 @@ DEPENDENCIES
   rerun (~> 0.14)
   rspec (~> 3.13)
   rubocop-rickselby (~> 0.46)
-  securerandom (~> 0.3)
+  securerandom (~> 0.4)
   sequel (~> 5.87)
   sinatra (~> 4.1)
   sqlite3 (~> 2.4)
