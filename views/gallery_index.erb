@@ -1,12 +1,16 @@
 <h1>Galleries</h1>
 
+<h2>
+  <a href="/press">Ciclos Major in the Press</a>
+</h2>
+
 <div class="row row-cols-2 row-cols-md-3">
   <% GALLERIES.each do |gallery| %>
-  <div class="col text-center mb-5">
-    <a href="/gallery/<%= gallery[:slug] %>">
-      <img class="img-fluid d-block mb-1" src="/img/gallery/<%= gallery[:slug] %>/<%= gallery[:cover] %>">
-      <h2 class="h5"><%= gallery[:name] %></h2>
-    </a>
-  </div>
+    <div class="col text-center mb-5">
+      <a href="/gallery/<%= gallery[:slug] %>">
+        <img class="img-fluid d-block mb-1" src="/img/gallery/<%= gallery[:slug] %>/<%= gallery[:cover] %>">
+        <h3 class="h5"><%= gallery[:name] %></h3>
+      </a>
+    </div>
   <% end %>
 </div>
