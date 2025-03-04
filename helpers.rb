@@ -21,6 +21,13 @@ module Helpers
     session.key?(:user) && !session.fetch(:user).empty?
   end
 
+  def press_images(press)
+    Dir["./public/img/press/#{press[:slug]}/*"]
+      .select { |f| File.file?(f) }
+      .map { |p| p.delete_prefix "./public" }
+      .sort
+  end
+
   def format_bike_file_name(name)
     name.downcase.tr(" /+", "-").squeeze("-")
   end

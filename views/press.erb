@@ -1,0 +1,9 @@
+<h1>Ciclos Major in the Press</h1>
+
+<% @press.each do |press| %>
+  <h2><%= press[:name] %></h2>
+
+  <% press_images(press).each_with_index do |image, index| %>
+    <img class="img-fluid d-block" src="<%= image %>" data-slide="<%= index %>">
+  <% end %>
+<% end %>

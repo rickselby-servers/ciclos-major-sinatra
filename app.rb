@@ -134,6 +134,13 @@ get("/gallery/:slug") do
   erb :gallery
 end
 
+get("/press") do
+  @press = [
+    { slug: "cyclist-apr-2025", name: "The Cyclist – April 2025" },
+  ]
+  erb :press
+end
+
 # Redirects
 
 get("/312-mallorca/?") { redirect "/camps/312" }
