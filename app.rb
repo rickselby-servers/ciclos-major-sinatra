@@ -108,6 +108,7 @@ GALLERIES = [
   { slug: "2024-04-312", name: "312 April 2024", cover: "cee0c03c-b849-47d7-b7db-a2697058a62d.jpg" },
   { slug: "2024-04", name: "April 2024", cover: "IMG_5476.jpg" },
   { slug: "2024-03", name: "March 2024", cover: "b46869cf-a284-4964-a8af-8195d93aaded.jpg" },
+  { slug: "2024-02-lvycc", name: "Lee Valley Week 2024", cover: "aa1f7afe-695d-4b0e-9690-d8b24c53b728.jpg" },
   { slug: "2024-02", name: "February 2024", cover: "5a40f761-0073-4155-8907-1e6b7c680344.jpg" },
   { slug: "2023-10", name: "Autumn 2023", cover: "259381d9-9548-4ecb-b361-ca5a73415557.jpg" },
   { slug: "2023-05", name: "May 2023", cover: "IMG_6846.jpg" },
