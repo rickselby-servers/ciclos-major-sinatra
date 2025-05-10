@@ -56,9 +56,9 @@
     <orderEntry type="library" scope="PROVIDED" name="prism (v1.4.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v6.6.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, RVM: ruby-3.4.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v3.1.13, RVM: ruby-3.4.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v3.1.14, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-protection (v4.1.1, RVM: ruby-3.4.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.0, RVM: ruby-3.4.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.1, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.2.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rackup (v2.2.1, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, RVM: ruby-3.4.3) [gem]" level="application" />
@@ -90,7 +90,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, RVM: ruby-3.4.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sequel (v5.91.0, RVM: ruby-3.4.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sequel (v5.92.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v4.1.1, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="smart_properties (v1.17.0, RVM: ruby-3.4.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="snaky_hash (v2.0.1, RVM: ruby-3.4.3) [gem]" level="application" />

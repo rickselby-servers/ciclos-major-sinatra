@@ -105,6 +105,14 @@ get("/locations/mallorca") { erb :"locations/mallorca" }
 get("/locations/muro") { erb :"locations/muro" }
 
 GALLERIES = [
+  {
+    slug:  "2025-03-london-phoenix",
+    name:  "London Phoenix March 2025",
+    cover: "4fc05ae3-587d-4b3c-b7bb-066d2eaa3646.jpg",
+  },
+  { slug: "2025-03-tri-camp", name: "Triathlon Camp March 2025", cover: "55758f72-9618-40b7-a31f-74bcdada5c4d.jpg" },
+  { slug: "2025-02-lvycc", name: "Lee Valley Week 2025", cover: "669dca28-22c5-4c31-b605-753ec91336b2.jpg" },
+  { slug: "2025-02", name: "February 2025", cover: "f3b248e4-bc32-4cd3-bad3-07f766b491fa.jpg" },
   { slug: "2024-05", name: "May 2024", cover: "7e6319e4-1e8a-4a34-b7b4-b77a2949d3e5.jpg" },
   { slug: "2024-04-312", name: "312 April 2024", cover: "cee0c03c-b849-47d7-b7db-a2697058a62d.jpg" },
   { slug: "2024-04", name: "April 2024", cover: "IMG_5476.jpg" },
