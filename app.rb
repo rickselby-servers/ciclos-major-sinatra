@@ -105,6 +105,9 @@ get("/locations/mallorca") { erb :"locations/mallorca" }
 get("/locations/muro") { erb :"locations/muro" }
 
 GALLERIES = [
+  { slug: "2025-04-312", name: "312 April 2025", cover: "91365393-2bfc-4032-980c-ceb106f6328a.jpg" },
+  { slug: "2025-04", name: "April 2025", cover: "283dd4df-ea9b-40c9-94e6-7ad58bf2fcf6.jpg" },
+  { slug: "2025-03", name: "March 2025", cover: "6148c608-e4f0-43bb-8f04-b52f93d57618.jpg" },
   {
     slug:  "2025-03-london-phoenix",
     name:  "London Phoenix March 2025",
