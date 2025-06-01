@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 group :test, :development do
   gem "rack-test", "~> 2.2"
-  gem "rake", "~> 13.2"
+  gem "rake", "~> 13.3"
   gem "rerun", "~> 0.14"
   gem "rubocop-rickselby", "~> 0.57", require: false
 end
