@@ -9,7 +9,7 @@ Bundler.require
 require_relative "helpers"
 
 DEV_SECRET = "0fe07dcd4c857ba8dcb8f060c1e8ebf65694fea2a1371b6e5e4b49534725df2f"
-SOLD_OUT_312 = true
+SOLD_OUT_312 = false
 REGISTER_INTEREST_312 = false
 
 configure do
@@ -94,6 +94,9 @@ get("/camps/2025-spring") { erb :"camps/2025-spr" }
 get("/camps/2025-autumn") { erb :"camps/2025-aut" }
 get("/camps/2025-312") { erb :"camps/2025-312" }
 get("/camps/2025-swim") { erb :"camps/2025-swim" }
+get("/camps/2026-spring") { erb :"camps/2026-spr" }
+get("/camps/2026-autumn") { erb :"camps/2026-aut" }
+get("/camps/2026-312") { erb :"camps/2026-312" }
 # Hotels
 get("/hotels/can-ribera") { erb :"hotels/can_ribera" }
 get("/hotels/zafiro-palace") { erb :"hotels/zafiro_palace" }

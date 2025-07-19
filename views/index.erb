@@ -13,21 +13,6 @@
 <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
   <div class="col">
     <div class="card h-100">
-      <img src="/img/camps/2025-spr.jpg" class="card-img-top img-fluid" alt="" aria-hidden="true">
-      <div class="card-body">
-        <h5 class="card-title">Spring 2025</h5>
-        <p class="card-text">31st January - 17th May</p>
-      </div>
-      <div class="card-footer">
-        <a href="/camps/2025-spring" class="btn btn-primary">
-          Book Now
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100">
       <img src="/img/camps/2025-aut.jpg" class="card-img-top img-fluid" alt="" aria-hidden="true">
       <div class="card-body">
         <h5 class="card-title">Autumn 2025</h5>
@@ -55,20 +40,81 @@
       </div>
     </div>
   </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/camps/2026-spr-index.jpg" class="card-img-top img-fluid" alt="" aria-hidden="true">
+      <div class="card-body">
+        <h5 class="card-title">Spring 2026</h5>
+        <p class="card-text">31st January - 31st May</p>
+      </div>
+      <div class="card-footer">
+        <a href="/camps/2026-spring" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
   <div class="col">
-    <a href="/bike-rental">
-      <div class="card h-100">
-        <img src="/img/index/bike-rental.jpg" class="card-img-top img-fluid" alt="Team GF Six Disc Di2 Carbon Wheel Bike" aria-hidden="true">
-        <div class="card-footer">
-          <button class="btn btn-primary">Bike Rental</button>
-        </div>
+    <div class="card h-100">
+      <img src="/img/camps/2026-aut.jpg" class="card-img-top img-fluid" alt="" aria-hidden="true">
+      <div class="card-body">
+        <h5 class="card-title">Autumn 2026</h5>
+        <p class="card-text">13th September - 2nd November</p>
       </div>
-    </a>
+      <div class="card-footer">
+        <a href="/camps/2026-autumn" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
   </div>
 
+  <div class="col">
+    <div class="card h-100">
+      <div class="position-relative d-inline-block">
+        <img src="/img/camps/2026-312.jpg" class="card-img-top img-fluid" alt="Cyclists finishing the 312 Sportive" aria-hidden="true">
+        <% if SOLD_OUT_312 || REGISTER_INTEREST_312 %>
+          <div class="position-absolute top-50 start-50 w-100 alert alert-danger banner-rotated text-center">
+            <% if SOLD_OUT_312 %>
+              Sold out!
+            <% elsif REGISTER_INTEREST_312 %>
+              Register your Interest here
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mallorca 312 OK Mobility</h5>
+        <p class="card-text">25th April 2025</p>
+      </div>
+      <div class="card-footer">
+        <a href="/camps/2026-312" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/index/bike-rental.jpg" class="card-img-top img-fluid" alt="Team GF Six Disc Di2 Carbon Wheel Bike" aria-hidden="true">
+      <div class="card-body">
+        <h5 class="card-title">Bike Rental</h5>
+      </div>
+      <div class="card-footer">
+        <a href="/bike-rental" class="btn btn-primary">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-4 text-center mb-3">
   <div class="col">
     <a href="/ride-groups">
       <div class="card h-100">
@@ -86,6 +132,17 @@
         <img src="/img/index/prices-2025.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
         <div class="card-footer">
           <button class="btn btn-primary">2025 Prices</button>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col">
+    <a href="/prices/2026.pdf">
+      <div class="card h-100">
+        <img src="/img/index/prices-2026.jpg" class="card-img-top img-fluid" alt="TODO" aria-hidden="true">
+        <div class="card-footer">
+          <button class="btn btn-primary">2026 Prices</button>
         </div>
       </div>
     </a>
