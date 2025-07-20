@@ -5,6 +5,12 @@
 
   > div {
     @extend .justify-content-around, .d-flex;
+    flex-shrink: 1;
+
+    > img {
+      max-width: 50%;
+      padding: 2px;
+    }
   }
 }
 
