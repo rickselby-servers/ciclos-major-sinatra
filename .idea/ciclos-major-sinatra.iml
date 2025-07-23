@@ -29,27 +29,21 @@
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.3, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erb_lint (v0.9.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.1, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.13.2, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v3.4.1, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.17.1, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.7, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.12.2, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.10.2, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.5, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.9.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="logger (v1.7.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.24.1, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.25.5, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.7.2, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mustermann (v3.0.3, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-http (v0.6.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.4, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.18.8, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="oauth2 (v2.0.12, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v2.1.3, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="omniauth-microsoft_graph (v2.1.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.8.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.27.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.3.8.0, RVM: ruby-3.4.5) [gem]" level="application" />
@@ -93,7 +87,6 @@
     <orderEntry type="library" scope="PROVIDED" name="sequel (v5.94.0, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v4.1.1, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="smart_properties (v1.17.0, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="snaky_hash (v2.0.3, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v2.7.3, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.2, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.6.0, RVM: ruby-3.4.5) [gem]" level="application" />
@@ -101,7 +94,6 @@
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v3.1.4, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-emoji (v4.0.4, RVM: ruby-3.4.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uri (v1.0.3, RVM: ruby-3.4.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="version_gem (v1.1.8, RVM: ruby-3.4.5) [gem]" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">
