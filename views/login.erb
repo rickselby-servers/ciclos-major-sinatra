@@ -6,7 +6,7 @@
     <form method="post" action="/auth/developer">
       <input type="hidden" name="authenticity_token" value="<%= request.env["rack.session"]["csrf"] %>">
       <button type="submit" class="btn btn-primary">
-        <span class="fa-solid fa-fw fa-arrow-right-to-bracket"></span>
+        <span class="fas fa-arrow-right-to-bracket"></span>
         Login with Developer
       </button>
     </form>
@@ -14,7 +14,7 @@
     <form method="post" action="/auth/microsoft_graph">
       <input type="hidden" name="authenticity_token" value="<%= request.env["rack.session"]["csrf"] %>">
       <button type="submit" class="btn btn-primary">
-        <span class="fa-solid fa-fw fa-arrow-right-to-bracket"></span>
+        <span class="fas fa-arrow-right-to-bracket"></span>
         Login with Microsoft
       </button>
     </form>
