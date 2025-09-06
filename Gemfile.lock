@@ -107,7 +107,7 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.4.0)
-    puma (6.6.1)
+    puma (7.0.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.0)
@@ -247,7 +247,7 @@ DEPENDENCIES
   erubi (~> 1.13)
   omniauth (~> 2.1)
   omniauth-microsoft_graph (~> 2.1)
-  puma (~> 6.6)
+  puma (~> 7.0)
   rack (~> 3.2)
   rack-test (~> 2.2)
   rackup (~> 2.2)
