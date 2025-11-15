@@ -6,7 +6,7 @@ group :test, :development do
   gem "rack-test", "~> 2.2"
   gem "rake", "~> 13.3"
   gem "rerun", "~> 0.14"
-  gem "rubocop-rickselby", "~> 0.60", require: false
+  gem "rubocop-rickselby", "~> 0.65", require: false
 end
 
 group :test do
@@ -15,6 +15,7 @@ end
 
 group :development do
   gem "bundler-audit", "~> 0.9"
+  gem "lefthook", "~> 2.0", require: false
 end
 
 gem "erubi", "~> 1.13"
