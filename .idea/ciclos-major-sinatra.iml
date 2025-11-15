@@ -36,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="json (v2.16.0, RVM: ruby-3.4.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v2.10.2, RVM: ruby-3.4.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.5, RVM: ruby-3.4.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lefthook (v2.0.4, RVM: ruby-3.4.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, RVM: ruby-3.4.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.9.0, RVM: ruby-3.4.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="logger (v1.7.0, RVM: ruby-3.4.7) [gem]" level="application" />

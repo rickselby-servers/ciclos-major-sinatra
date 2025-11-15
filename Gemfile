@@ -15,6 +15,7 @@ end
 
 group :development do
   gem "bundler-audit", "~> 0.9"
+  gem "lefthook", "~> 2.0", require: false
 end
 
 gem "erubi", "~> 1.13"
