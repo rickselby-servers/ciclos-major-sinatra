@@ -2,7 +2,9 @@
 <h2><%= name %></h2>
 <div class="row mb-3">
   <div class="col-8">
-    <img class="img-fluid mb-3 mx-auto d-block" src="/img/bikes/<%= format_bike_file_name name %>.png" alt="<%= name %>">
+    <img class="img-fluid mb-3 mx-auto d-block"
+         src="/img/bikes/<%= defined?(file_name) ? file_name : format_bike_file_name(name) %>.png"
+         alt="<%= name %>">
 
     <% if defined? blurb %>
       <p><%= blurb %></p>
@@ -26,8 +28,8 @@
   <div class="col-4">
     <%== erb :_rental_price_list, locals: { prices: } %>
     <div class="d-grid gap-2">
-      <a href="https://form.jotform.com/242604763949366" class="btn btn-primary">
-        Book Now 2025
+      <a href="https://form.jotform.com/252725585980368" class="btn btn-primary">
+        Book Now 2026
       </a>
     </div>
   </div>
