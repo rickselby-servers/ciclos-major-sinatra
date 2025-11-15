@@ -12,10 +12,15 @@
   </tr>
   </thead>
   <tbody>
-  <% prices.each_with_index do |price, day| %>
+  <%
+    prices.each_with_index do |price, index|
+      next if price.nil?
+
+      day = index + 1
+  %>
     <tr>
-      <td><%= day + 1 %></td>
-      <td>€<%= format("%.2f", price.fdiv(day + 1)) %></td>
+      <td><%= day %></td>
+      <td>€<%= format("%.2f", price.fdiv(day)) %></td>
       <td>€<%= format("%.2f", price) %></td>
     </tr>
   <% end %>
