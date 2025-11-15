@@ -78,7 +78,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     net-http (0.6.0)
       uri
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.9-x86_64-linux-musl)
@@ -108,7 +108,7 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.4.0)
-    puma (7.0.2)
+    puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.4)
@@ -248,7 +248,7 @@ DEPENDENCIES
   erubi (~> 1.13)
   omniauth (~> 2.1)
   omniauth-microsoft_graph (~> 2.1)
-  puma (~> 7.0)
+  puma (~> 7.1)
   rack (~> 3.2)
   rack-test (~> 2.2)
   rackup (~> 2.2)
