@@ -2,7 +2,6 @@
 FROM ruby:3.4.7-alpine AS ruby-base
 
 RUN apk --no-cache add imagemagick sqlite-dev
-RUN gem update bundler
 
 ###############################################################################
 FROM ruby-base AS ruby-build
