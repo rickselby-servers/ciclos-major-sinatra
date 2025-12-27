@@ -1,5 +1,5 @@
 ###############################################################################
-FROM ruby:3.4.8-alpine AS ruby-base
+FROM ruby:4.0.0-alpine AS ruby-base
 
 RUN apk --no-cache add imagemagick sqlite-dev
 
