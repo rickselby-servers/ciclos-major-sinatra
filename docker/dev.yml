@@ -1,0 +1,25 @@
+version: '2.4'
+
+services:
+  app:
+    image: $CONTAINER
+    restart: always
+    container_name: ciclos-major-sinatra-app-dev
+    environment:
+      CONTAINER_ROLE: app
+      RACK_ENV: production
+      VIRTUAL_HOST: dev.ciclosmajor.com
+      LETSENCRYPT_HOST: dev.ciclosmajor.com
+      LETSENCRYPT_EMAIL:
+      AD_TENANT:
+      AD_CLIENT_ID:
+      AD_CLIENT_SECRET:
+    volumes:
+      - ciclos-major-sinatra-dev-db:/database
+
+volumes:
+  ciclos-major-sinatra-dev-db:
+
+networks:
+  default:
+    name: ciclos-major-sinatra-dev
