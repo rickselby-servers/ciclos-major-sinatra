@@ -8,8 +8,8 @@ services:
     environment:
       CONTAINER_ROLE: app
       RACK_ENV: production
-      VIRTUAL_HOST: www.ciclosmajor.com
-      LETSENCRYPT_HOST: www.ciclosmajor.com
+      VIRTUAL_HOST: old.ciclosmajor.com
+      LETSENCRYPT_HOST: old.ciclosmajor.com
       LETSENCRYPT_EMAIL:
       SESSION_SECRET:
       AD_TENANT:
@@ -17,16 +17,6 @@ services:
       AD_CLIENT_SECRET:
     volumes:
       - ciclos-major-sinatra-db:/database
-
-  redirect:
-    container_name: ciclosmajor-redirect
-    image: morbz/docker-web-redirect
-    restart: always
-    environment:
-      VIRTUAL_HOST: ciclosmajor.com
-      LETSENCRYPT_HOST: ciclosmajor.com
-      LETSENCRYPT_EMAIL:
-      REDIRECT_TARGET: www.ciclosmajor.com
 
 volumes:
   ciclos-major-sinatra-db:
